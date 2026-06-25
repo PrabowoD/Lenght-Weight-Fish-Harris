@@ -32,7 +32,7 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Contoh hasil gambar yang telah dilakukan thresholding dan NMS}}{43}{figure.caption.31}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces \emph {source code}: Untuk menentukan nilai maksimal dan minimal sumbu x dan y dari titik sudut yang telah didapatkan}}{44}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Contoh hasil gambar yang telah diberi bounding box}}{45}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces \emph {source code}: Untuk menghitung panjang, lebar, dan keliling ikan}}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \emph {source code}: Untuk menghitung panjang, lebar, dan keliling ikan}}{45}{figure.caption.34}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces \emph {source code}: Untuk melakukan proyeksi perspektif}}{46}{figure.caption.35}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces \emph {source code}: Untuk mengestimasi berat ikan berdasarkan Rumus turunan \emph {Length-Weight Relationship}}}{47}{figure.caption.36}%
 \addvspace {10\p@ }

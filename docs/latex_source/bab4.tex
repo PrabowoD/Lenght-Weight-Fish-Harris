@@ -15,7 +15,7 @@
     \caption{Gambar yang akan digunakan dalam penelitian}\label{fig:folder-ikan}
 \end{figure}
 
-Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pra-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Ikan Mas, Ikan Lele, dan Ikan Nila.
+Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pra-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Mas, Lele, dan Nila Merah.
 \emph{pra-processing} dilakukan untuk memudahkan proses ektraksi sudut pada citra. \emph{pra-processing} terbagi menjadi beberapa tahapan, yaitu penghilangan background, rotasi citra berdasarkan sudut PCA, dan smoothing citra dengan Gaussian blur.
 Berikut \emph{Source Code} yang digunakan dalam proses penghapusan background:
 
@@ -33,17 +33,17 @@ Fungsi \emph{remove} digunakan untuk menghapus background dari gambar dengan men
 	\begin{subfigure}{.3\textwidth}
 		\centering
         \includegraphics[keepaspectratio, width=3cm]{gambar/IMG_20240121_131125.jpg}
-		\caption{Ikan Mas}
+		\caption{Mas}
 	\end{subfigure}
 	\begin{subfigure}{.3\textwidth}
 		\centering
 		\includegraphics[keepaspectratio, width=3cm]{gambar/IMG_20240121_132544.jpg}
-		\caption{Ikan lele}
+		\caption{Lele}
 	\end{subfigure} 
 	\begin{subfigure}{.3\textwidth}
 		\centering
 		\includegraphics[keepaspectratio, width=3cm]{gambar/IMG_20240121_140044.jpg}
-		\caption{Ikan Nila Merah}
+		\caption{Nila Merah}
 	\end{subfigure}
 	\caption{Contoh Gambar dan Jenis Ikan yang Digunakan}\label{fig:dataset}
 \end{figure}
@@ -53,17 +53,17 @@ Fungsi \emph{remove} digunakan untuk menghapus background dari gambar dengan men
 	\begin{subfigure}{.3\textwidth}
 		\centering
         \includegraphics[keepaspectratio, width=3cm]{gambar/IMG_20240121_131125 - Copy.jpg}
-		\caption{Ikan Mas}
+		\caption{Mas}
 	\end{subfigure}
 	\begin{subfigure}{.3\textwidth}
 		\centering
 		\includegraphics[keepaspectratio, width=3cm]{gambar/IMG_20240121_132544 - Copy.jpg}
-		\caption{Ikan lele}
+		\caption{Lele}
 	\end{subfigure} 
 	\begin{subfigure}{.3\textwidth}
 		\centering
 		\includegraphics[keepaspectratio, width=3cm]{gambar/IMG_20240121_135842 - Copy.jpg}
-		\caption{Ikan Nila Merah}
+		\caption{Nila Merah}
 	\end{subfigure}
 	\caption{Contoh hasil gambar yang telah dihilangkan backgroundnya}\label{fig:rembg}
 \end{figure}
@@ -132,7 +132,8 @@ Setelah rotasi dilakukan dengan fungsi \emph{PCa\_Rotate\_image}, gambar akan me
     \end{lstlisting}
 \end{figure}
 
-\emph{GaussianSmooth()} bertujuan untuk menghaluskan citra dengan menggunakan filter Gaussian. Fungsi ini pertama-tama memeriksa apakah citra memiliki tiga saluran warna (RGB) atau hanya satu saluran (grayscale). Jika citra memiliki tiga saluran, maka akan dikonversi menjadi grayscale menggunakan fungsi \emph{cv2.cvtColor}. Setelah itu, fungsi \emph{cv2.GaussianBlur} digunakan untuk menerapkan filter Gaussian pada citra dengan kernel berukuran 3x3 dan nilai sigmaX sebesar 1. Hasil dari proses ini kemudian dinormalisasi ke rentang [0, 255] menggunakan fungsi \emph{cv2.normalize} untuk memastikan bahwa nilai piksel berada dalam rentang yang valid untuk citra grayscale. 
+\emph{GaussianSmooth()} bertujuan untuk menghaluskan citra dengan menggunakan filter Gaussian. Fungsi ini pertama-tama memeriksa apakah citra memiliki tiga saluran warna (RGB) atau hanya satu saluran (grayscale). Jika citra memiliki tiga saluran, maka akan dikonversi menjadi grayscale menggunakan fungsi \emph{cv2.cvtColor}. Setelah itu, fungsi \emph{cv2.GaussianBlur} digunakan untuk menerapkan filter Gaussian pada citra dengan kernel berukuran 3x3 dan nilai sigmaX sebesar 1. 
+Hasil dari proses ini kemudian dinormalisasi ke rentang [0, 255] menggunakan fungsi \emph{cv2.normalize} memastikan bahwa nilai piksel berada pada rentang yang valid untuk citra grayscale. 
 Setelah semua tahapan pra-processing telah selesai dilakukan, gambar akan disave kedalam folder terpisah dan akan digunakan untuk proses selanjutnya.
 
 % \section{Penghitungan Harris Respon}
@@ -204,8 +205,8 @@ Tahapan ini bertujuan untuk menentukan apakah suatu piksel pada citra merupakan 
     \caption{\emph{source code}: Untuk menghitung Harris Respon}
 \end{figure}
 
-Pada penelitian ini, nilai konstanta empiris $k$ yang digunakan adalah sebesar 0.04. 
-Nilai tersebut digunakan untuk mengontrol sensitivitas deteksi sudut pada citra. 
+Penelitian ini, menggunakan konstanta empiris $k$ sebesar 0.04. 
+Konstanta tersebut digunakan untuk mengontrol sensitivitas deteksi sudut pada citra. 
 Nilai $k$ yang terlalu kecil dapat menyebabkan banyak titik tepi terdeteksi sebagai sudut, sedangkan nilai yang terlalu besar dapat menyebabkan beberapa sudut penting tidak terdeteksi.
 
 Hasil perhitungan Harris response menghasilkan nilai respon pada setiap piksel citra. Nilai respon yang besar dan positif menunjukkan bahwa piksel tersebut memiliki perubahan intensitas yang signifikan pada dua arah sekaligus, sehingga berpotensi menjadi titik sudut (\emph{corner}). 
@@ -223,17 +224,17 @@ Oleh karena itu, diperlukan proses thresholding dan \emph{Non-Maximum Suppressio
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_mas_1_Harris.jpg}
-        \caption{Ikan Mas}
+        \caption{Mas}
     \end{subfigure}
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_lele_induk_1_Harris.jpg}
-        \caption{Ikan lele}
+        \caption{Lele}
     \end{subfigure} 
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_nila_induk_1_Harris.jpg}
-        \caption{Ikan Nila Merah}
+        \caption{Nila Merah}
     \end{subfigure}
     \caption{Contoh hasil gambar yang telah dilakukan Harris Respon}\label{fig:harris_respon}
 \end{figure}
@@ -269,7 +270,7 @@ Piksel dengan nilai respon lebih besar dari nilai ambang akan dipertahankan seba
 \end{figure}
 
 Penggunaan threshold membantu mengurangi jumlah piksel yang diproses lebih lanjut sehingga sistem dapat lebih fokus pada area dengan perubahan intensitas yang signifikan. 
-Nilai threshold yang terlalu kecil dapat menyebabkan banyak titik sudut palsu (\emph{false corner}) ikut terdeteksi, sedangkan nilai threshold yang terlalu besar dapat menyebabkan beberapa titik sudut penting pada objek ikan tidak terdeteksi.
+Nilai threshold yang terlalu kecil dapat menyebabkan banyak titik sudut palsu (\emph{false corner}) ikut terdeteksi, sedangkan nilai threshold yang terlalu besar menyebabkan beberapa titik sudut penting pada objek ikan tidak terdeteksi.
 
 Setelah proses thresholding, tahap berikutnya adalah \emph{Non-Maximum Suppression} (NMS). Proses NMS dilakukan untuk menghilangkan titik-titik sudut yang saling berdekatan dan hanya mempertahankan titik dengan nilai respon terbesar pada suatu area lokal.
 
@@ -281,17 +282,17 @@ kemudian, dibuat sebuah mask yang menunjukan piksel-piksel yang memiliki nilai r
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_mas_1_NMS.jpg}
-        \caption{Ikan Mas}
+        \caption{Mas}
     \end{subfigure}
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_lele_induk_1_NMS.jpg}
-        \caption{Ikan lele}
+        \caption{Lele}
     \end{subfigure} 
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_nila_induk_1_NMS.jpg}
-        \caption{Ikan Nila Merah}
+        \caption{Nila Merah}
     \end{subfigure}
     \caption{Contoh hasil gambar yang telah dilakukan thresholding dan NMS}\label{fig:corner}
 \end{figure}
@@ -318,12 +319,10 @@ Pemilihan titik sudut untuk bounding box dilakukan dengan menggunakan \emph{Sour
 \end{figure}
 
 Pada penelitian ini, bounding box dibentuk menggunakan titik sudut hasil Harris-Corner Detection yang telah melalui proses penyaringan menggunakan thresholding dan NMS\@.
-Proses pembentukan bounding box dilakukan dengan mencari:
+Proses pembentukan bounding box dimulai dengan mencari:
 \begin{itemize}
-    \item nilai minimum sumbu-$x$
-    \item nilai maksimum sumbu-$x$
-    \item nilai minimum sumbu-$y$
-    \item nilai maksimum sumbu-$y$
+    \item nilai maximum dan minimum sumbu-$x$
+    \item nilai maximum dan minimum sumbu-$y$
 \end{itemize}
 
 Koordinat tersebut digunakan untuk membentuk kotak yang mencakup seluruh tubuh ikan pada citra. 
@@ -343,17 +342,17 @@ Namun, terdapat beberapa kondisi yang dapat mempengaruhi akurasi bounding box, s
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4.2cm]{gambar/ikan_mas_1 - Box.jpg}
-        \caption{Ikan Mas}
+        \caption{Mas}
     \end{subfigure}
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4.2cm]{gambar/ikan_lele_1 - Box.jpg}
-        \caption{Ikan lele}
+        \caption{Lele}
     \end{subfigure} 
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[keepaspectratio, width=4.2cm]{gambar/ikan_nila_1 - Box.jpg}
-        \caption{Ikan Nila}
+        \caption{Nila Merah}
     \end{subfigure}
     \caption{Contoh hasil gambar yang telah diberi bounding box}\label{fig:box}
 \end{figure}
@@ -457,9 +456,9 @@ Nilai tersebut didapatkan dengan melakukan pengukuran langsung pada ikan nyata d
 
 \section{Evaluasi Akurasi}
     Nilai hasil penghitungan panjang, lebar, dan berat ikan akan dibandingkan dengan nilai panjang, lebar, dan berat ikan referensi.
-Nilai referensi yang digunakan dapat dilihat pada tabel~\ref{tab:Nilai Referensi}.
+Nilai referensi yang digunakan terdapat pada tabel~\ref{tab:Nilai Referensi}.
 
-Setelah dilakukan evaluasi akurasi terhadap hasil deteksi panjang, lebar, dan estimasi berat ikan, ditemukan bahwa beberapa hasil estimasi berat ikan ada yang kurang, bahkan ada yang melebihi dari nilai referensi-nya. Hasil deteksi panjang, lebar, dan estimasi berat dapat di lihat pada tabel~\ref{tab:Hasil Deteksi} berikut: %Hal ini disebabkan oleh beberapa faktor, yaitu:
+Setelah dilakukan evaluasi akurasi terhadap hasil deteksi panjang, lebar, dan estimasi berat ikan, ditemukan bahwa beberapa hasil estimasi berat ikan ada yang kurang, bahkan ada yang melebihi dari nilai referensi-nya. Hasil deteksi dapat dilihat pada tabel~\ref{tab:Hasil Deteksi}. %Hal ini disebabkan oleh beberapa faktor, yaitu:
 
 % \begin{enumerate}
 %     \item Proses penghitungan berat ikan yang menggunakan nilai luas ikan sebagai input, sehingga jika terdapat kesalahan pada proses penghitungan panjang dan lebar ikan, maka akan berpengaruh pada hasil estimasi berat ikan.
@@ -475,12 +474,12 @@ Setelah dilakukan evaluasi akurasi terhadap hasil deteksi panjang, lebar, dan es
         No. & Nama File & Panjang (cm) & Lebar (cm) & Berat (g) \\
         \hline
         \endfirsthead
-        \multicolumn{5}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
+        \multicolumn{5}{c}{{\tablename\ \thetable{} -- Lanjutan halaman sebelumnya}} \\
         \hline
         No. & Nama File & Panjang (cm) & Lebar (cm) & Berat (g) \\
         \hline
         \endhead
-        \hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+        \hline \multicolumn{5}{|r|}{{Berlanjut dihalaman berikutnya}} \\ \hline
         \endfoot
         \hline
         \endlastfoot
@@ -552,7 +551,7 @@ Setelah dilakukan evaluasi akurasi terhadap hasil deteksi panjang, lebar, dan es
     \caption{Hasil Deteksi}\label{tab:Hasil Deteksi}
 \end{longtable}
 
-Dengan Menggunakan rumus \emph{Mean Absolute Percentage Error} atau MAPE, didapatkan hasil evaluasi akurasi pada table~\ref{tab:MAPE} berikut:
+Dengan Menggunakan rumus MAPE, didapatkan hasil evaluasi akurasi pada table~\ref{tab:MAPE} berikut:
 
 \begin{table}[H]
     \centering
@@ -572,12 +571,21 @@ Dengan Menggunakan rumus \emph{Mean Absolute Percentage Error} atau MAPE, didapa
 
 Dan pada table~\ref{tab:allEval} adalah hasil keseluruhan evaluasi akurasi :
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|}
+\begin{longtable}{|c|c|c|c|c|}
         \hline
-        No. & Nama File & Berat (\%) & Panjang (\%) & Lebar (\%) \\
+        No. & Nama File & Panjang (cm) & Lebar (cm) & Berat (g) \\
         \hline
+        \endfirsthead
+        \multicolumn{5}{c}{{\tablename\ \thetable{} -- Lanjutan halaman sebelumnya}} \\
+        \hline
+        No. & Nama File & Panjang (cm) & Lebar (cm) & Berat (g) \\
+        \hline
+        \endhead
+        \hline \multicolumn{5}{|r|}{{Berlanjut dihalaman berikutnya}} \\ \hline
+        \endfoot
+        \hline
+        \endlastfoot
+
         1. & ikan\_mas\_1.jpg & 91.89 & 100 & 71.43 \\
         \hline
         2. & ikan\_mas\_2.jpg & 92.80 & 100 & 66.67 \\
@@ -589,15 +597,6 @@ Dan pada table~\ref{tab:allEval} adalah hasil keseluruhan evaluasi akurasi :
         5. & ikan\_mas\_5.jpg & 74.78 & 100 & 85/71 \\
         \hline
         6. & ikan\_mas\_6.jpg & 83.33 & 100 & 87.5 \\
-        \hline
-
-    \end{tabular}
-    \end{table}
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        No. & Nama File & Berat (\%) & Panjang (\%) & Lebar (\%) \\
         \hline
         7. & ikan\_lele\_Induk\_1.jpg & 74.7 & 100 & 75 \\
         \hline
@@ -651,11 +650,10 @@ Dan pada table~\ref{tab:allEval} adalah hasil keseluruhan evaluasi akurasi :
         \hline
         32. & ikan\_nila\_kbawah\_13.jpg & 92.14 & 100 & 83.33 \\
         \hline
-    \end{tabular}
     \caption{Hasil Evaluasi Akurasi}\label{tab:allEval}
-\end{table}
+\end{longtable}
 
-Berdasarkan hasil evaluasi akurasi pada tabel~\ref{tab:MAPE} dan tabel~\ref{tab:allEval}, dapat disimpulkan sistem juga masih menghasilkan kesalahan dalam pengukuran pada beberapa citra ikan.
+Berdasarkan hasil evaluasi akurasi pada tabel~\ref{tab:MAPE} dan tabel~\ref{tab:allEval}, didapatkan sebuah kesimpulan bahwa sistem masih menghasilkan kesalahan dalam pengukuran pada beberapa citra ikan.
 Kesalahan tersebut umumnya disebabkan oleh bentuk tubuh ikan yang tidak sepenuhnya lurus sehingga bounding box tidak selalu mampu merepresentasikan panjang tubuh ikan secara akurat.
 Selain itu, beberapa citra menghasilkan titik sudut palsu (\emph{false corner}) akibat perubahan intensitas kecil pada bagian sirip dan ekor ikan. 
 Kondisi ini menyebabkan koordinat minimum dan maksimum objek menjadi kurang stabil sehingga mempengaruhi hasil pengukuran panjang. 

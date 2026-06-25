@@ -52,8 +52,8 @@ Konsep ini menjadi dasar dalam pengolahan citra digital karena setiap piksel pad
 % \end{figure}
 
 \section{Citra Berwarna}
-Citra berwarna adalah citra digital yang merepresentasikan informasi warna menggunakan kombinasi beberapa kanal warna. 
-Model warna yang paling umum digunakan dalam pengolahan citra digital adalah RGB (\emph{Red, Green, Blue}), di mana setiap piksel terdiri dari tiga komponen warna, yaitu merah (R), hijau (G), dan biru (B). 
+Citra berwarna merupakan citra digital yang merepresentasikan informasi warna menggunakan kombinasi beberapa kanal warna. 
+Model warna yang sering digunakan dalam pengolahan citra digital adalah RGB (\emph{Red, Green, Blue}), di mana setiap piksel terdiri dari tiga komponen warna, yaitu merah (R), hijau (G), dan biru (B). 
 Kombinasi ketiga komponen tersebut menghasilkan berbagai variasi warna pada citra digital (\cite{Gonzalez2018}).
 
 Pada model RGB, setiap kanal warna biasanya direpresentasikan dalam rentang nilai 0 hingga 255 pada citra 8-bit.
@@ -66,7 +66,7 @@ Gambar yang telah diambil dengan kamera \emph{Smartphone} awalnya berupa citra b
 Mengkonversi citra menjadi grayscale, melakukan smoothing dengan filter gaussian, menghitung gradien, lalu setelah itu mendeteksi sudut dengan metode \emph{Harris-Corner Detection}.
 
 \section{Citra Grayscale}
-  Citra grayscale adalah representasi citra yang hanya menggunakan satu saluran warna, yaitu tingkat keabuan. Citra ini dihasilkan dengan mengubah citra berwarna menjadi skala abu-abu, di mana setiap piksel dalam citra hanya memiliki nilai intensitas yang mewakili tingkat keabuan, seperti pada gambar~\ref{fig:Citra}. Proses ini sering dilakukan untuk menyederhanakan analisis citra, karena mengurangi kompleksitas data yang harus diproses (\cite{Gonzalez2018}). 
+  Citra grayscale merupakan representasi citra yang hanya menggunakan satu saluran warna, yaitu tingkat keabuan. Citra ini dihasilkan dengan mengubah citra berwarna menjadi skala abu-abu, di mana setiap piksel dalam citra hanya memiliki nilai intensitas yang mewakili tingkat keabuan, seperti pada gambar~\ref{fig:Citra}. Proses ini sering dilakukan untuk menyederhanakan analisis citra, karena mengurangi kompleksitas data yang harus diproses (\cite{Gonzalez2018}). 
   Penggunaan citra grayscale sangat umum dalam proses deteksi fitur multi-skala dan algoritma deteksi sudut seperti Harris-Corner Detection, karena memudahkan perhitungan gradien dan matriks momen kedua (\cite{Sanchez2018}).
 \begin{figure}[H]
 	\centering
@@ -176,7 +176,7 @@ Dalam gambar atau citra digital, Gradien memainkan peran utama dalam membentuk m
 Wilayah dengan nilai eigen tinggi di semua arah menunjukkan sudut, sedangkan wilayah dengan satu nilai eigen tinggi menggambarkan tepi (\cite{Sanchez2018}).
 
   Berbagai operator gradien, seperti Sobel, Prewitt, dan Scharr, digunakan untuk menghitung gradien dalam gambar dengan mendeteksi perubahan intensitas piksel di sepanjang arah tertentu. 
-Operator Sobel, sebagai salah satu metode yang paling umum, menggunakan kernel konvolusi untuk menghitung gradien dalam arah horizontal (x) dan vertikal (y), menghasilkan peta gradien yang mengidentifikasi tepi dan perubahan penting dalam struktur gambar.
+Operator Sobel, sebagai salah satu dari banyak metode yang paling sering dipakai, menggunakan kernel konvolusi untuk menghitung gradien dalam arah horizontal (x) dan vertikal (y), menghasilkan peta gradien yang mengidentifikasi tepi dan perubahan penting dalam struktur gambar.
 \subsection{Operator Sobel}
   Operator Sobel adalah salah satu metode yang paling umum digunakan untuk menghitung gradien dalam citra digital. Metode ini menggunakan dua kernel konvolusi, satu untuk mendeteksi perubahan horizontal dan satu lagi untuk perubahan vertikal. Kernel ini dirancang untuk memberikan bobot lebih pada piksel yang berada di tengah, sehingga lebih sensitif terhadap perubahan intensitas yang tajam.
   \begin{equation}
@@ -194,7 +194,7 @@ Operator Sobel, sebagai salah satu metode yang paling umum, menggunakan kernel k
 \end{equation}
 
   \subsection{Prewitt Filter}
-    Prewitt Filter merupakan salah satu metode lain untuk menghitung gradien dalam citra digital.
+    Prewitt Filter merupakan salah satu metode lain dalam menghitung gradien pada citra digital.
   Mirip dengan operator Sobel, Prewitt filter juga menggunakan kernel dua dimensi. Kernel yang digunakan lebih sederhana dibandingkan dengan Sobel, sehingga menghasilkan tepi yang lebih sederhana namun cenderung kurang tajam.
 
 \begin{equation*}
@@ -266,7 +266,7 @@ Matriks ini memiliki dua nilai eigen, yang memungkinkan identifikasi suatu area 
 Dengan menggunakan sifat tersebut, respon sudut dapat dihitung menggunakan analisis nilai eigen atau metode lain, salah satunya fungsi kekuatan sudut Harris \(R\) seperti yang dijelaskan pada rumus\ref{Harris-Corner Detection}.
 
 \section{\emph{Harris-Corner Detection}}
-  \emph{Harris-Corner Detection} merupakan salah satu dari sekian banyak algoritma untuk mendeteksi fitur (\emph{feature}), algoritma ini pertama kali diperkenalkan oleh Chris Harris dan Mike Stephens pada tahun 1988 (\cite{Harris1988}). 
+  Deteksi sudut Harris merupakan salah satu dari sekian banyak algoritma untuk mendeteksi fitur (\emph{feature}), algoritma ini diperkenalkan pertama kali oleh Chris Harris dan Mike Stephens pada tahun 1988 (\cite{Harris1988}). 
 Metode ini digunakan untuk mendeteksi titik-titik sudut pada citra berdasarkan perubahan intensitas piksel pada area lokal citra.
 Titik sudut (\emph{corner}) merupakan area yang memiliki perubahan intensitas signifikan pada dua arah sekaligus, sehingga dapat digunakan sebagai fitur penting dalam analisis citra dan visi komputer (\cite{Harris1988}).
 %Ide dibalik metode Harris adalah untuk mendeteksi titik sudut berdasarkan variasi intensitas di area sekitar: wilayah yang kecil di sekitar fitur menunjukkan perubahan intensitas yang besar dibandingkan dengan pergeseran jendela ke segala arah (\cite{Sanchez2018}) seperti pada gambar\ref{fig:harris-corner-detection}.
@@ -315,7 +315,7 @@ Walaupun tubuh ikan tidak memiliki struktur geometris yang kaku seperti objek bu
 
 \section{Thresholding dan Non-Maximum Suppression}
 
-Setelah nilai \textit{Harris response} diperoleh, diperlukan proses seleksi untuk menentukan titik sudut (\textit{corner}) yang valid. Nilai respon Harris umumnya masih menghasilkan banyak titik dengan respon rendah akibat noise atau perubahan intensitas kecil pada citra. Oleh karena itu, digunakan metode \textit{thresholding} dan \textit{Non-Maximum Suppression} (NMS) untuk menyaring titik sudut yang paling signifikan.
+Setelah nilai \textit{Harris response} diperoleh, diperlukan proses seleksi untuk menentukan titik sudut (\textit{corner}) yang valid. Nilai respon Harris umumnya masih menghasilkan banyak titik dengan respon rendah akibat noise atau perubahan intensitas kecil pada citra. Oleh karena itu, digunakan metode \textit{thresholding} dan \textit{Non-Maximum Suppression} untuk menyaring titik sudut yang paling signifikan.
 
 \textit{Thresholding} merupakan proses penyaringan nilai respon Harris berdasarkan nilai ambang tertentu (\textit{threshold}). Piksel yang memiliki nilai respon lebih besar dari nilai ambang akan dipertahankan sebagai kandidat titik sudut, sedangkan piksel dengan nilai respon di bawah ambang akan dihilangkan. Secara matematis, proses thresholding dapat dinyatakan sebagai berikut:
 
@@ -483,7 +483,7 @@ Parameter visual V dapat berupa luas area objek, panjang, atau parameter geometr
 Penelitian yang dilakukan oleh \textcite{Balaban2010} menunjukkan bahwa parameter visual memiliki korelasi yang kuat terhadap berat ikan sehingga dapat digunakan sebagai metode estimasi berat berbasis citra digital.
 
 Selain Visual-Weight Relationship, dalam bidang perikanan juga dikenal metode \emph{Length-Weight Relationship} (LWR),
-yaitu hubungan biologis antara panjang dan berat ikan. Metode ini digunakan untuk menggambarkan pola pertumbuhan ikan berdasarkan panjang tubuhnya dan secara umum dirumuskan sebagai berikut:
+yaitu hubungan biologis antara panjang dengan berat ikan. Metode ini dipakai untuk menggambarkan pola perkembahangan ikan berdasarkan panjang tubuhnya, secara umum dirumuskan sebagai berikut:
 
 \begin{equation}
 W = aL^b
@@ -497,7 +497,7 @@ di mana:
     \item $a$ dan $b$  koefisien pertumbuhan (growth exponent).
 \end{itemize}
 
-Nilai b digunakan untuk menentukan pola pertumbuhan ikan, yaitu isometrik atau allometrik (\cite{LeCren1951}).
+Nilai b berfungsi menentukan pola perkembangan ikan, yaitu isometrik atau allometrik (\cite{LeCren1951}).
 Namun, pada penelitian berbasis pengolahan citra digital, pendekatan \emph{Visual-Weight Relationship} lebih sering digunakan karena parameter visual dapat diperoleh langsung dari citra tanpa perlu pengukuran fisik secara manual.
 
 %   Length-Weight Relationship (LWR) merupakan metode yang digunakan untuk

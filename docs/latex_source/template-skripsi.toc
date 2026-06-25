@@ -63,13 +63,13 @@
 \contentsline {subsection}{\numberline {4.6.1}Bounding Box}{44}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}Menghitung Panjang}{45}{subsection.4.6.2}%
 \contentsline {subsection}{\numberline {4.6.3}Memproyeksi Perspectif}{46}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Mengitung Berat}{47}{subsection.4.6.4}%
-\contentsline {section}{\numberline {4.7}Evaluasi Akurasi}{48}{section.4.7}%
+\contentsline {subsection}{\numberline {4.6.4}Mengitung Berat}{46}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.7}Evaluasi Akurasi}{47}{section.4.7}%
 \contentsline {chapter}{\numberline {V}KESIMPULAN DAN SARAN}{52}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Kesimpulan}{52}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Saran}{52}{section.5.2}%
 \contentsline {chapter}{DAFTAR PUSTAKA}{53}{Item.26}%
-\contentsline {chapter}{LAMPIRAN}{55}{chapter*.40}%
-\contentsline {chapter}{\numberline {A}\textit {Source Code}}{55}{chapter.A}%
-\contentsline {chapter}{\numberline {B}Table Data}{56}{chapter.B}%
-\contentsline {chapter}{\numberline {C}Tabel Nilai Referensi}{58}{chapter.C}%
+\contentsline {chapter}{LAMPIRAN}{55}{chapter*.38}%
+\contentsline {chapter}{\numberline {A}\textit {Source Code}}{55}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Table Data}{56}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Tabel Nilai Referensi}{58}{appendix.C}%
