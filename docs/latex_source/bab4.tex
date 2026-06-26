@@ -6,7 +6,7 @@
 
 \chapter{HASIL DAN PEMBAHASAN}
 
-\section{Pra-Processing Citra}
+\section{Pre-Processing Citra}
 \subsection{Input Gambar dan Penghilangan Background}
 
 \begin{figure}[H]
@@ -15,8 +15,8 @@
     \caption{Gambar yang akan digunakan dalam penelitian}\label{fig:folder-ikan}
 \end{figure}
 
-Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pra-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Mas, Lele, dan Nila Merah.
-\emph{pra-processing} dilakukan untuk memudahkan proses ektraksi sudut pada citra. \emph{pra-processing} terbagi menjadi beberapa tahapan, yaitu penghilangan background, rotasi citra berdasarkan sudut PCA, dan smoothing citra dengan Gaussian blur.
+Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pre-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Mas, Lele, dan Nila Merah.
+\emph{pre-processing} dilakukan untuk memudahkan proses ektraksi sudut pada citra. \emph{pre-processing} terbagi menjadi beberapa tahapan, yaitu penghilangan background, rotasi citra berdasarkan sudut PCA, dan smoothing citra dengan Gaussian blur.
 Berikut \emph{Source Code} yang digunakan dalam proses penghapusan background:
 
 \begin{figure}[H]
@@ -134,7 +134,7 @@ Setelah rotasi dilakukan dengan fungsi \emph{PCa\_Rotate\_image}, gambar akan me
 
 \emph{GaussianSmooth()} bertujuan untuk menghaluskan citra dengan menggunakan filter Gaussian. Fungsi ini pertama-tama memeriksa apakah citra memiliki tiga saluran warna (RGB) atau hanya satu saluran (grayscale). Jika citra memiliki tiga saluran, maka akan dikonversi menjadi grayscale menggunakan fungsi \emph{cv2.cvtColor}. Setelah itu, fungsi \emph{cv2.GaussianBlur} digunakan untuk menerapkan filter Gaussian pada citra dengan kernel berukuran 3x3 dan nilai sigmaX sebesar 1. 
 Hasil dari proses ini kemudian dinormalisasi ke rentang [0, 255] menggunakan fungsi \emph{cv2.normalize} memastikan bahwa nilai piksel berada pada rentang yang valid untuk citra grayscale. 
-Setelah semua tahapan pra-processing telah selesai dilakukan, gambar akan disave kedalam folder terpisah dan akan digunakan untuk proses selanjutnya.
+Setelah semua tahapan pre-processing telah selesai dilakukan, gambar akan disave kedalam folder terpisah dan akan digunakan untuk proses selanjutnya.
 
 % \section{Penghitungan Harris Respon}
 \section{Menghitung Gradien}
@@ -163,11 +163,11 @@ Setelah semua tahapan pra-processing telah selesai dilakukan, gambar akan disave
 Hasil dari proses gradien menunjukkan bahwa bagian tepi tubuh ikan memiliki perubahan intensitas yang cukup tinggi dibandingkan area lainnya. 
 Nilai gradien terbesar umumnya muncul pada bagian kepala, ekor, dan sirip ikan karena area tersebut memiliki perubahan bentuk dan kontras yang lebih signifikan terhadap latar belakang citra.
 
-Selain itu, penggunaan Gaussian smoothing pada tahap sebelumnya membantu mengurangi noise sehingga hasil gradien menjadi lebih stabil. 
+Selain itu, penggunaan Gaussian Smoothing pada tahap sebelumnya membantu mengurangi noise sehingga hasil gradien menjadi lebih stabil. 
 Tanpa proses smoothing, noise kecil pada citra dapat menghasilkan perubahan intensitas palsu yang berpotensi menyebabkan munculnya titik sudut yang tidak sesuai pada proses Harris-Corner Detection.
 
 \section{Auto Korelasi}
-  Proses auto korelasi dilakukan dengan mengkalikan hasil dari gradien dengan gaussian blur. Proses ini bertujuan untuk mengukur seberapa besarnya perubahan intensitas,~berikut \emph{Source Code} yang digunakan untuk menghitung auto korelasi:
+  Proses autokorelasi dilakukan dengan mengkalikan hasil dari gradien dengan gaussian blur. Proses ini bertujuan untuk mengukur seberapa besarnya perubahan intensitas,~berikut \emph{Source Code} yang digunakan untuk menghitung autokorelasi:
 \begin{figure}[H]
     \begin{lstlisting}[language=Python, basicstyle=\tiny]
         def AutoCorrelation(gradient_x, gradient_y):
@@ -176,7 +176,7 @@ Tanpa proses smoothing, noise kecil pada citra dapat menghasilkan perubahan inte
             Iyy = cv2.GaussianBlur(gradient_y ** 2, (3, 3), sigmaX=1)
             return Ixx, Ixy, Iyy
     \end{lstlisting}
-    \caption{\emph{source code}: Untuk menghitung auto korelasi}
+    \caption{\emph{source code}: Untuk menghitung autokorelasi}
 \end{figure}
 
 Pada tahap ini dihasilkan tiga komponen utama, yaitu:
@@ -186,12 +186,12 @@ Pada tahap ini dihasilkan tiga komponen utama, yaitu:
     \item \emph{Iyy} yang representasi dari perubahan intensitas pada sumbu Y\@.
 \end{itemize}
 
-Nilai-nilai tersebut kemudian digunakan untuk membentuk matriks auto korelasi $M$ pada setiap piksel citra. Matriks ini digunakan sebagai dasar dalam menghitung nilai respon Harris pada tahap berikutnya.
-Area yang memiliki perubahan intensitas tinggi pada dua arah sekaligus akan menghasilkan nilai auto korelasi yang besar. Kondisi ini umumnya terjadi pada bagian sudut objek ikan, seperti ujung kepala dan ekor. 
-Sebaliknya, area tubuh ikan yang relatif datar akan menghasilkan perubahan intensitas yang lebih kecil sehingga nilai auto korelasi juga menjadi lebih rendah.
+Nilai-nilai tersebut kemudian digunakan untuk membentuk matriks autokorelasi $M$ pada setiap piksel citra. Matriks ini digunakan sebagai dasar dalam menghitung nilai respon Harris pada tahap berikutnya.
+Area yang memiliki perubahan intensitas tinggi pada dua arah sekaligus akan menghasilkan nilai autokorelasi yang besar. Kondisi ini umumnya terjadi pada bagian sudut objek ikan, seperti ujung kepala dan ekor. 
+Sebaliknya, area tubuh ikan yang relatif datar akan menghasilkan perubahan intensitas yang lebih kecil sehingga nilai autokorelasi juga menjadi lebih rendah.
 
 \section{Harris Respon}
-    Setelah matriks auto korelasi (\emph{second moment matrix}) diperoleh, tahap selanjutnya adalah menghitung nilai Harris response. 
+    Setelah matriks autokorelasi (\emph{second moment matrix}) diperoleh, tahap selanjutnya adalah menghitung nilai Harris response. 
 Tahapan ini bertujuan untuk menentukan apakah suatu piksel pada citra merupakan titik sudut (\emph{corner}), tepi (\emph{edge}), atau area datar (\emph{flat area}).
 
 \begin{figure}[H]
@@ -217,7 +217,7 @@ Hal ini terjadi karena area tersebut memiliki perubahan bentuk yang cukup tajam 
 Sementara itu, bagian tengah tubuh ikan cenderung menghasilkan nilai respon yang lebih rendah karena perubahan intensitasnya relatif lebih stabil.
 
 Hasil Harris response pada tahap ini masih mengandung cukup banyak kandidat titik sudut, termasuk beberapa titik yang muncul akibat noise atau perubahan intensitas kecil pada tubuh ikan. 
-Oleh karena itu, diperlukan proses thresholding dan \emph{Non-Maximum Suppression} (NMS) pada tahap berikutnya untuk menyaring titik sudut sehingga hanya titik sudut paling signifikan yang dipertahankan.
+Oleh karena itu, diperlukan proses Thresholding dan \emph{Non-Maximum Suppression} (NMS) pada tahap berikutnya untuk menyaring titik sudut sehingga hanya titik sudut paling signifikan yang dipertahankan.
 
 \begin{figure}[H]
     \centering
@@ -239,19 +239,19 @@ Oleh karena itu, diperlukan proses thresholding dan \emph{Non-Maximum Suppressio
     \caption{Contoh hasil gambar yang telah dilakukan Harris Respon}\label{fig:harris_respon}
 \end{figure}
 
-\section{NMS dan thresholding}
-Setelah nilai Harris response diperoleh, tahap selanjutnya adalah melakukan proses thresholding dan \emph{Non-Maximum Suppression} (NMS). 
+\section{NMS dan Thresholding}
+Setelah nilai Harris response diperoleh, tahap selanjutnya adalah melakukan proses Thresholding dan \emph{Non-Maximum Suppression} (NMS). 
 Tahapan ini bertujuan untuk menyaring kandidat titik sudut sehingga hanya titik sudut paling signifikan yang dipertahankan untuk proses selanjutnya.
 
 Pada hasil awal Harris response, masih terdapat banyak piksel yang memiliki nilai respon tinggi, termasuk beberapa titik yang muncul akibat noise, tekstur kecil, atau perubahan intensitas yang tidak terlalu penting. 
 Oleh karena itu, diperlukan proses penyaringan agar sistem hanya memilih titik sudut yang benar-benar merepresentasikan bentuk objek ikan.
 
-Tahap pertama adalah thresholding. Proses ini dilakukan dengan menggunakan fungsi \emph{thresholding} terhadap nilai Harris response. 
+Tahap pertama adalah Thresholding. Proses ini dilakukan dengan menggunakan fungsi \emph{Thresholding} terhadap nilai Harris response. 
 Piksel dengan nilai respon lebih besar dari nilai ambang akan dipertahankan sebagai kandidat sudut, sedangkan piksel dengan nilai respon di bawah ambang akan diabaikan.
 
  \begin{figure}[H]
     \begin{lstlisting}[language=Python, basicstyle=\tiny]
-        def thresholding(preprocessed_images, Harris_respon, output_dir="Output"):
+        def Thresholding(preprocessed_images, Harris_respon, output_dir="Output"):
             os.makedirs(output_dir, exist_ok=True)
             all_corners = []
 
@@ -266,16 +266,16 @@ Piksel dengan nilai respon lebih besar dari nilai ambang akan dipertahankan seba
                 all_corners.append(corners)
             return all_corners
     \end{lstlisting}
-    \caption{\emph{source code}: Untuk melakukan thresholding dan non-maximum suppression}
+    \caption{\emph{source code}: Untuk melakukan Thresholding dan Non-Maximum Suppression}
 \end{figure}
 
 Penggunaan threshold membantu mengurangi jumlah piksel yang diproses lebih lanjut sehingga sistem dapat lebih fokus pada area dengan perubahan intensitas yang signifikan. 
 Nilai threshold yang terlalu kecil dapat menyebabkan banyak titik sudut palsu (\emph{false corner}) ikut terdeteksi, sedangkan nilai threshold yang terlalu besar menyebabkan beberapa titik sudut penting pada objek ikan tidak terdeteksi.
 
-Setelah proses thresholding, tahap berikutnya adalah \emph{Non-Maximum Suppression} (NMS). Proses NMS dilakukan untuk menghilangkan titik-titik sudut yang saling berdekatan dan hanya mempertahankan titik dengan nilai respon terbesar pada suatu area lokal.
+Setelah proses Thresholding, tahap berikutnya adalah \emph{Non-Maximum Suppression} (NMS). Proses NMS dilakukan untuk menghilangkan titik-titik sudut yang saling berdekatan dan hanya mempertahankan titik dengan nilai respon terbesar pada suatu area lokal.
 
 Pada proses ini, nilai \emph{Harris response} akan didilatasi menggunakan fungsi \emph{cv2.dilate} untuk menemukan nilai maksimum dalam suatu area lokal.
-kemudian, dibuat sebuah mask yang menunjukan piksel-piksel yang memiliki nilai respon yang sama dengan hasil thresholding. Hasil piksel-piksel tersebulah yang akan digunakan untuk menghitung panjang dan estimasi berat ikan pada tahap selanjutnya.  
+kemudian, dibuat sebuah mask yang menunjukkan piksel-piksel yang memiliki nilai respon yang sama dengan hasil Thresholding. Hasil piksel-piksel tersebulah yang akan digunakan untuk menghitung panjang dan estimasi berat ikan pada tahap selanjutnya.  
 
 \begin{figure}[H]
     \centering
@@ -294,12 +294,12 @@ kemudian, dibuat sebuah mask yang menunjukan piksel-piksel yang memiliki nilai r
         \includegraphics[keepaspectratio, width=4cm]{gambar/ikan_nila_induk_1_NMS.jpg}
         \caption{Nila Merah}
     \end{subfigure}
-    \caption{Contoh hasil gambar yang telah dilakukan thresholding dan NMS}\label{fig:corner}
+    \caption{Contoh hasil gambar yang telah dilakukan Thresholding dan NMS}\label{fig:corner}
 \end{figure}
 
 \section{Menghitung Panjang dan Berat}
-\subsection{Bounding Box}
-    Setelah proses thresholding dan Non-Maximum Suppression (NMS) selesai dilakukan, sistem memperoleh kumpulan titik sudut utama (\emph{corner points}) pada objek ikan. 
+\subsection{Bounding-Box}
+    Setelah proses Thresholding dan Non-Maximum Suppression (NMS) selesai dilakukan, sistem memperoleh kumpulan titik sudut utama (\emph{corner points}) pada objek ikan. 
 Titik-titik sudut tersebut kemudian digunakan untuk membentuk bounding box sebagai dasar dalam proses pengukuran panjang dan lebar ikan.
 Pemilihan titik sudut untuk bounding box dilakukan dengan menggunakan \emph{Source Code} berikut:
 \begin{figure}[H]
@@ -318,7 +318,7 @@ Pemilihan titik sudut untuk bounding box dilakukan dengan menggunakan \emph{Sour
     \caption{\emph{source code}: Untuk menentukan nilai maksimal dan minimal sumbu x dan y dari titik sudut yang telah didapatkan}
 \end{figure}
 
-Pada penelitian ini, bounding box dibentuk menggunakan titik sudut hasil Harris-Corner Detection yang telah melalui proses penyaringan menggunakan thresholding dan NMS\@.
+Pada penelitian ini, bounding box dibentuk menggunakan titik sudut hasil Harris-Corner Detection yang telah melalui proses penyaringan menggunakan Thresholding dan NMS\@.
 Proses pembentukan bounding box dimulai dengan mencari:
 \begin{itemize}
     \item nilai maximum dan minimum sumbu-$x$
@@ -387,7 +387,7 @@ Meskipun demikian, penggunaan bounding box pada penelitian ini cukup efektif unt
 Nilai \emph{sk} merupakan skala konversi dari piksel ke sentimeter yang didapatkan dengan membandingkan ukuran sebuah koin dengan ukuran koin pada gambar.
 Gambar koin tersebut diambil dengan menggunakan kamera dan tinggi pengambilan gambar yang sama dengan saat pengambilan gambar ikan.
 
-\subsection{Memproyeksi Perspectif}
+\subsection{Memproyeksi Perspektif}
     Setelah panjang dan lebar ikan didapatkan, langkah selanjutnya adalah dengan melakukan proyeksi perspektif untuk mengoreksi distorsi yang terjadi pada gambar akibat sudut pengambilan gambar yang tidak sejajar dengan objek. Berikut \emph{Source Code} yang digunakan untuk melakukan proyeksi perspektif:
 \begin{figure}[H]
     \begin{lstlisting}[language=Python, basicstyle=\tiny]
@@ -416,7 +416,7 @@ Gambar koin tersebut diambil dengan menggunakan kamera dan tinggi pengambilan ga
 
 fungsi \emph{transform\_size} digunakan untuk melakukan proyeksi perspektif dengan menggunakan nilai panjang deteksi yang didapatkan dari hasil perhitungan panjang ikan dan nilai panjang GT yang didapatkan dari tabel referensi. Nilai panjang GT digunakan untuk mengoreksi panjang deteksi sehingga mendapatkan panjang yang lebih akurat. Setelah itu, nilai lebar juga akan dikoreksi dengan menggunakan rasio antara panjang GT dan panjang deteksi.
 
-\subsection{Mengitung Berat}
+\subsection{Menghitung Berat}
     Nilai keliling hasil dari fungsi \emph{calculate\_size} akan digunakan untuk menghitung berat ikan. Namun sebelum itu, ikan perlu melalui proses pengecekan jenis ikan, karena berat ikan akan berbeda tergantung jenis ikan. Berikut \emph{Source Code} yang digunakan untuk menghitung berat ikan:
 \begin{figure}[H]
     \begin{lstlisting}[language=Python, basicstyle=\tiny]

@@ -7,13 +7,15 @@
 \chapter{KAJIAN PUSTAKA}
 
 \section{Pengertian Citra Digital}
-  Citra digital adalah representasi visual dari objek atau pemandangan yang diwakili dalam diskret tersusun atas element-element kecil bernama \emph{pixel}.
-Setiap piksel memiliki nilai numerik yang menunjukan tingkat kecerahan atau warna pada posisi tertentu dalam citra, seperti pada gambar\ref{fig:Colour_pixel}.
+  Citra digital adalah representasi visual dari objek atau pemandangan yang diwakili dalam diskret tersusun atas elemen-elemen kecil bernama \emph{pixel}.
+Dalam citra tingkat kecerahan ataupun warna pada setiap piksel diwakili oleh nilai numeriknya masing-masing,
+  % Setiap piksel memiliki nilai numerik yang menunjukkan tingkat kecerahan atau warna pada posisi tertentu dalam citra, 
+seperti pada gambar~\ref{fig:Colour_pixel}.
 
 \begin{figure}[H]
   \centering
   \includegraphics[keepaspectratio, width=13cm]{gambar/Colour_pixel.jpg}
-  \caption{Warna pixel pada citra}\label{fig:Colour_pixel}
+  \caption{Warna piksel pada citra}\label{fig:Colour_pixel}
   \caption*{Sumber:~\cite{RohanNair}}
 \end{figure}
 
@@ -90,14 +92,14 @@ Mengkonversi citra menjadi grayscale, melakukan smoothing dengan filter gaussian
 
 \section{Gaussian Smoothing}
 % \subsection{Gaussian scale-space}
-Gaussian smoothing merupakan teknik image smoothing yang digunakan untuk mengurangi noise dan detail kecil pada citra digital sebelum dilakukan proses analisis lebih lanjut.
+Gaussian Smoothing merupakan teknik image smoothing yang digunakan untuk mengurangi noise dan detail kecil pada citra digital sebelum dilakukan proses analisis lebih lanjut.
 Metode ini bekerja dengan cara melakukan konvolusi citra menggunakan kernel Gaussian sehingga perubahan intensitas piksel menjadi lebih halus.
-Dalam pengolahan citra digital, Gaussian smoothing banyak digunakan sebagai tahap pre-processing karena mampu mengurangi gangguan (noise) tanpa menghilangkan struktur utama objek secara signifikan (\cite{Gonzalez2018}).
+Dalam pengolahan citra digital, Gaussian Smoothing banyak digunakan sebagai tahap pre-processing karena mampu mengurangi gangguan (noise) tanpa menghilangkan struktur utama objek secara signifikan (\cite{Gonzalez2018}).
 
 Pada metode \emph{Harris-Corner Detection}, proses smoothing sangat penting karena deteksi sudut sangat sensitif terhadap noise. Noise pada citra dapat menghasilkan perubahan intensitas yang tidak diinginkan sehingga menyebabkan munculnya titik sudut palsu (\emph{false corner}). 
-Oleh karena itu, Gaussian smoothing digunakan untuk memperhalus citra sebelum dilakukan perhitungan gradien dan matriks momen kedua (\emph{second moment matrix}) (\cite{Sanchez2018}).
+Oleh karena itu, Gaussian Smoothing digunakan untuk memperhalus citra sebelum dilakukan perhitungan gradien dan matriks momen kedua (\emph{second moment matrix}) (\cite{Sanchez2018}).
 
-Proses Smoothing sangat penting karena deteksi fitur sangat sensitif terhadap noise, terlebih lagi pada deteksi sudut. Noise pada citra dapat menghasilkan perubahan intensitas yang dapat menyebabkan munculnya sudut palsu (\emph{false corner}). Oleh karena itu, Gaussian smoothing sering digunakan untuk memperhalus citra sebelum memasuki tahapan perhitungan.
+Proses Smoothing sangat penting karena deteksi fitur sangat sensitif terhadap noise, terlebih lagi pada deteksi sudut. Noise pada citra dapat menghasilkan perubahan intensitas yang dapat menyebabkan munculnya sudut palsu (\emph{false corner}). Oleh karena itu, Gaussian Smoothing sering digunakan untuk memperhalus citra sebelum memasuki tahapan perhitungan.
 Filter Gaussian dibentuk berdasarkan distribusi Gaussian dua dimensi yang dirumuskan sebagai berikut:
 
 % Dalam domain diskrit citra digital, parameter skala juga direpresentasikan secara diskrit. 
@@ -111,13 +113,13 @@ Filter Gaussian dibentuk berdasarkan distribusi Gaussian dua dimensi yang dirumu
 g(\sigma) = \frac{1}{2\pi\sigma_{x}\sigma_{y}}\exp\left(-\left[\frac{(x - \mu_{x})^{2}}{2\sigma_{x}^2} + \frac{(y - \mu_{y})^{2}}{2\sigma_{y}^2}\right]\right)
 \end{equation*}
 
-Dimana \(\mu_{x}\) dan \(\mu_{y}\) adalah \(mean\) atau rata-rata dari sumbu-x dan sumbu-y, dan \(\sigma_{x}\) dan \(\sigma_{y}\) adalah \emph{standard deviation} atau deviasi standar dari sumbu-x dan sumbu-y. Jika \(\mu_{x} = \mu_{y} = 0\) dan \(\sigma_{x} = \sigma_{y}\) maka dapat disederhanakan menjadi:
+Dimana \(\mu_{x}\) dan \(\mu_{y}\) adalah \(mean\) atau rata-rata dari sumbu-x dan sumbu-y, dan \(\sigma_{x}\) dan \(\sigma_{y}\) adalah \emph{standard deviation} atau simpangan baku dari sumbu-x dan sumbu-y. Jika \(\mu_{x} = \mu_{y} = 0\) dan \(\sigma_{x} = \sigma_{y}\) maka dapat disederhanakan menjadi:
 \begin{equation}
 g(\sigma) = \frac{1}{2\pi\sigma^2}\exp\left(-\frac{x^2+y^2}{2\sigma^2}\right)
 \label{eq:gaussian kernel}
 \end{equation}
 
-Nilai \(\sigma\) mempengaruhi tingkat blur pada citra. Semakin besar nilai \(\sigma\) maka citra akan menjadi semakin halus karena lebih banyak detail dan noise yang dikurangi, begitupun sebaliknya.
+Nilai \(\sigma\) mempengaruhi tingkat blur pada citra. Semakin besar nilai \(\sigma\) maka citra akan menjadi semakin halus karena lebih banyak detail dan noise yang dikurangi, begitu pula sebaliknya.
 Proses \emph{Gaussian Smoothing} dilakukan melalui operasi konvolusi antara kernel Gaussian dan citra input. Operasi konvolusi dituliskan pada rumus~\ref{eq:konvolusi} berikut:
 
 % Keunikan dari kernel Gaussian dapat diketahui dari beberapa sifat berikut: 
@@ -157,7 +159,7 @@ di mana:
   \item simbol \(*\) menyatakan operasi konvolusi
 \end{enumerate}
 
-Dalam penelitian ini, Gaussian smoothing digunakan pada tahap \emph{pre-processing} untuk mengurangi noise pada citra ikan sebelum dilakukan proses perhitungan gradien dan deteksi sudut menggunakan metode \emph{Harris-Corner Detection}.
+Dalam penelitian ini, Gaussian Smoothing digunakan pada tahap \emph{pre-processing} untuk mengurangi noise pada citra ikan sebelum dilakukan proses perhitungan gradien dan deteksi sudut menggunakan metode \emph{Harris-Corner Detection}.
 Dengan berkurangnya noise, titik sudut yang dihasilkan menjadi lebih stabil dan akurat dalam merepresentasikan bentuk tubuh ikan.
 
 % Dengan \(I\) adalah gambar, \(x = (x,y)\) adalah lokasi poin, \(g(\sigma)\) adalah kernel gaussian.
@@ -166,12 +168,12 @@ Dengan berkurangnya noise, titik sudut yang dihasilkan menjadi lebih stabil dan 
 \begin{figure}[H]
   \centering{}
   \includegraphics[keepaspectratio, width=10cm]{gambar/Uniform Gaussian kernel.jpg}
-  \caption{Uniform gaussian Kernel}\label{fig:Uniform Gaussian kernel}
+  \caption{Uniform Gaussian Kernel}\label{fig:Uniform Gaussian kernel}
 \end{figure}
 
 
 \section{\emph{Gradient}}
-  Gradien dalam matematika dan pemrosesan citra adalah sebuah konsep yang menunjukkan arah perubahan sebuah nilai intensitas pada suatu titik pada gambar 2-Dimensi atau 3-Dimensi. 
+  Gradien dalam matematika dan pemrosesan citra adalah sebuah konsep yang menunjukkan arah perubahan sebuah nilai intensitas pada suatu titik pada gambar 2 dimensi atau 3 dimensi. 
 Dalam gambar atau citra digital, Gradien memainkan peran utama dalam membentuk matriks auto-korelasi, yang nilai eigennya menggambarkan struktur lokal gambar. 
 Wilayah dengan nilai eigen tinggi di semua arah menunjukkan sudut, sedangkan wilayah dengan satu nilai eigen tinggi menggambarkan tepi (\cite{Sanchez2018}).
 
@@ -211,7 +213,7 @@ Operator Sobel, sebagai salah satu dari banyak metode yang paling sering dipakai
 \end{equation*}
 
 \subsection{Scharr Filter}
-  Scharr juga merupakan metode lain untuk menghitung gradien. Scharr filter merupakan modifikasi atau pengembangan dari operator sobel, yang bertujuan untuk meningkatkan akurasi deteksi tepi terutama pada citra dengan resolusi tinggi.
+  Scharr juga merupakan metode lain untuk menghitung gradien. \emph{Scharr Filter} merupakan modifikasi atau pengembangan dari operator Sobel, yang bertujuan untuk meningkatkan akurasi deteksi tepi terutama pada citra dengan resolusi tinggi.
 
 \begin{equation*}
   SC_x = \begin{bmatrix}
@@ -237,7 +239,7 @@ Di mana \(G_x\) dan \(G_y\) adalah hasil konvolusi citra dengan kernel Sobel unt
 
 \section{\emph{Second moment matrix}}
   Matriks momen kedua (\emph{second moment matrix}) adalah matriks simetris \(2 \times 2\) yang mencerminkan variasi intensitas di sekitar piksel dalam sebuah citra. Matriks ini seringkali digunakan untuk mendeteksi fitur, atau mendeskripsikan struktur dari \emph{local image}.
-Matriks ini juga panggil sebagai matriks auto-korelasi, seperti pada rumus\ref{eq:SecondMomentMatrix}
+Matriks ini juga panggil sebagai matriks auto-korelasi, seperti pada rumus~\ref{eq:SecondMomentMatrix}
 
 \begin{equation}
   M = 
@@ -263,7 +265,7 @@ Matriks ini memiliki dua nilai eigen, yang memungkinkan identifikasi suatu area 
   \item Jika kedua nilai eigen besar, maka kemungkinan besar area tersebut adalah sudut (\emph{corner}).
 \end{itemize}
 
-Dengan menggunakan sifat tersebut, respon sudut dapat dihitung menggunakan analisis nilai eigen atau metode lain, salah satunya fungsi kekuatan sudut Harris \(R\) seperti yang dijelaskan pada rumus\ref{Harris-Corner Detection}.
+Dengan menggunakan sifat tersebut, respon sudut dapat dihitung menggunakan analisis nilai eigen atau metode lain, salah satunya fungsi kekuatan sudut Harris \(R\) seperti yang dijelaskan pada rumus~\ref{Harris-Corner Detection}.
 
 \section{\emph{Harris-Corner Detection}}
   Deteksi sudut Harris merupakan salah satu dari sekian banyak algoritma untuk mendeteksi fitur (\emph{feature}), algoritma ini diperkenalkan pertama kali oleh Chris Harris dan Mike Stephens pada tahun 1988 (\cite{Harris1988}). 
@@ -272,7 +274,7 @@ Titik sudut (\emph{corner}) merupakan area yang memiliki perubahan intensitas si
 %Ide dibalik metode Harris adalah untuk mendeteksi titik sudut berdasarkan variasi intensitas di area sekitar: wilayah yang kecil di sekitar fitur menunjukkan perubahan intensitas yang besar dibandingkan dengan pergeseran jendela ke segala arah (\cite{Sanchez2018}) seperti pada gambar\ref{fig:harris-corner-detection}.
 
 Dalam pengolahan citra digital, titik sudut memiliki karakteristik yang lebih stabil dibandingkan titik tepi biasa karena perubahan intensitas terjadi pada arah horizontal dan vertikal secara bersamaan.
-Oleh karena itu, metode Harris banyak digunakan pada aplikasi seperti deteksi objek, pelacakan gerakan, pencocokan citra (\emph{image matching}), dan pengenalan pola (\cite{Sanchez2018}).
+Oleh karena itu, metode Harris sering dipakai pada aplikasi yang memerlukan deteksi objek, pelacakan gerakan, pencocokan citra (\emph{image matching}), dan pengenalan pola (\cite{Sanchez2018}).
 
 \begin{figure}[H]
   \centering
@@ -315,9 +317,9 @@ Walaupun tubuh ikan tidak memiliki struktur geometris yang kaku seperti objek bu
 
 \section{Thresholding dan Non-Maximum Suppression}
 
-Setelah nilai \textit{Harris response} diperoleh, diperlukan proses seleksi untuk menentukan titik sudut (\textit{corner}) yang valid. Nilai respon Harris umumnya masih menghasilkan banyak titik dengan respon rendah akibat noise atau perubahan intensitas kecil pada citra. Oleh karena itu, digunakan metode \textit{thresholding} dan \textit{Non-Maximum Suppression} untuk menyaring titik sudut yang paling signifikan.
+Setelah nilai \textit{Harris response} diperoleh, diperlukan proses seleksi untuk menentukan titik sudut (\textit{corner}) yang valid. Nilai respon Harris umumnya masih menghasilkan banyak titik dengan respon rendah akibat noise atau perubahan intensitas kecil pada citra. Oleh karena itu, digunakan metode \textit{Thresholding} dan \textit{Non-Maximum Suppression} untuk menyaring titik sudut yang paling signifikan.
 
-\textit{Thresholding} merupakan proses penyaringan nilai respon Harris berdasarkan nilai ambang tertentu (\textit{threshold}). Piksel yang memiliki nilai respon lebih besar dari nilai ambang akan dipertahankan sebagai kandidat titik sudut, sedangkan piksel dengan nilai respon di bawah ambang akan dihilangkan. Secara matematis, proses thresholding dapat dinyatakan sebagai berikut:
+\textit{Thresholding} merupakan proses penyaringan nilai respon Harris berdasarkan nilai ambang tertentu (\textit{threshold}). Piksel yang memiliki nilai respon lebih besar dari nilai ambang akan dipertahankan sebagai kandidat titik sudut, sedangkan piksel dengan nilai respon di bawah ambang akan dihilangkan. Secara matematis, proses Thresholding dapat dinyatakan sebagai berikut:
 
 \[
 R(x,y) =
@@ -333,9 +335,9 @@ di mana:
     \item $T$ adalah nilai \textit{threshold} yang digunakan,
 \end{itemize}
 
-Proses thresholding mampu mengurangi jumlah titik sudut palsu (\textit{false corner}) yang disebabkan oleh noise atau perubahan intensitas kecil pada citra. Namun, hasil thresholding masih dapat menghasilkan beberapa titik sudut yang berdekatan pada area yang sama. Oleh karena itu, digunakan metode \textit{Non-Maximum Suppression} (NMS).
+Proses Thresholding mampu mengurangi jumlah titik sudut palsu (\textit{false corner}) yang disebabkan oleh noise atau perubahan intensitas kecil pada citra. Namun, hasil Thresholding masih dapat menghasilkan beberapa titik sudut yang berdekatan pada area yang sama. Oleh karena itu, digunakan metode \textit{Non-Maximum Suppression} (NMS).
 
-\textit{Non-Maximum Suppression} merupakan metode yang digunakan untuk mempertahankan hanya titik sudut dengan nilai respon terbesar pada suatu area lokal. Setelah thresholding dilakukan, sering kali masih terdapat banyak titik sudut yang berdekatan akibat respon tinggi pada area yang sama. Oleh karena itu, NMS digunakan untuk mengurangi redundansi titik sudut.
+\textit{Non-Maximum Suppression} merupakan metode yang digunakan untuk mempertahankan hanya titik sudut dengan nilai respon terbesar pada suatu area lokal. Setelah Thresholding dilakukan, sering kali masih terdapat banyak titik sudut yang berdekatan akibat respon tinggi pada area yang sama. Oleh karena itu, NMS digunakan untuk mengurangi redundansi titik sudut.
 
 Proses NMS dilakukan dengan membandingkan nilai respon suatu piksel terhadap piksel-piksel di sekitarnya dalam sebuah jendela lokal. Jika nilai respon piksel tersebut bukan yang terbesar, maka piksel akan dihilangkan. Sebaliknya, jika nilai respon merupakan yang terbesar dalam area lokal, maka piksel dipertahankan sebagai titik sudut akhir.
 
@@ -350,11 +352,11 @@ Proses NMS dilakukan dengan membandingkan nilai respon suatu piksel terhadap pik
 di mana:
 \begin{itemize}
     \item $NMS(x,y)$ adalah hasil dari proses Non-Maximum Suppression pada koordinat $(x,y)$,
-    \item $R(x,y)$ adalah nilai respon Harris yang telah melalui proses thresholding.
+    \item $R(x,y)$ adalah nilai respon Harris yang telah melalui proses Thresholding.
     \item $MaxLocal R(i,j)$ adalah nilai respon Harris maksimum dalam jendela lokal di sekitar koordinat $(x,y)$.
 \end{itemize}
 
-Dengan penerapan thresholding dan Non-Maximum Suppression, titik sudut yang dihasilkan menjadi lebih akurat dan terfokus pada bagian penting objek. Dalam penelitian ini, kedua proses tersebut digunakan untuk menyaring titik sudut pada tubuh ikan sehingga hanya titik sudut yang paling representatif yang digunakan dalam proses pengukuran panjang ikan.
+Dengan penerapan Thresholding dan Non-Maximum Suppression, titik sudut yang dihasilkan menjadi lebih akurat dan terfokus pada bagian penting objek. Dalam penelitian ini, kedua proses tersebut digunakan untuk menyaring titik sudut pada tubuh ikan sehingga hanya titik sudut yang paling representatif yang digunakan dalam proses pengukuran panjang ikan.
 
 % \section{Thresholding}
 %   Thresholding adalah teknik yang digunakan untuk 
@@ -443,12 +445,12 @@ rotasi dihitung dengan rumus berikut:
   
 Di mana \((x, y)\) adalah koordinat asli piksel, \((x', y')\) adalah koordinat piksel setelah rotasi, dan \(\theta\) adalah sudut rotasi dalam radian. Proses ini memastikan bahwa citra dapat diputar sesuai kebutuhan tanpa kehilangan informasi penting yang terkandung di dalamnya (\cite{Gonzalez2018}).
 
-\section{Bounding Box}
-  %Bounding box adalah sebuah kotak persegi panjang yang digunakan untuk membatasi atau mengelilingi objek dalam citra. Dalam konteks pengolahan citra digital, bounding box sering digunakan untuk mendeteksi dan mengukur objek, seperti dalam aplikasi pengenalan pola, deteksi objek, dan analisis citra medis. Bounding box biasanya didefinisikan oleh koordinat titik sudut kiri atas dan kanan bawah, atau oleh koordinat pusat dan ukuran (lebar dan tinggi) dari kotak tersebut.
-Bounding box adalah kotak berbentuk persegi panjang yang digunakan untuk membatasi area objek pada citra digital. 
+\section{Bounding-Box}
+  %Bounding-Box adalah sebuah kotak persegi panjang yang digunakan untuk membatasi atau mengelilingi objek dalam citra. Dalam konteks pengolahan citra digital, bounding box sering digunakan untuk mendeteksi dan mengukur objek, seperti dalam aplikasi pengenalan pola, deteksi objek, dan analisis citra medis. Bounding-Box biasanya didefinisikan oleh koordinat titik sudut kiri atas dan kanan bawah, atau oleh koordinat pusat dan ukuran (lebar dan tinggi) dari kotak tersebut.
+Bounding-Box adalah kotak berbentuk persegi panjang yang digunakan untuk membatasi area objek pada citra digital. 
 Dalam pengolahan citra, bounding box sering digunakan untuk menentukan posisi, panjang, lebar, dan ukuran objek berdasarkan koordinat piksel terluar objek tersebut (\cite{Gonzalez2018}).
 
-Bounding box umumnya dibentuk menggunakan titik koordinat minimum dan maksimum pada sumbu \(x\) dan \(y\). Dengan memanfaatkan koordinat tersebut, sistem dapat menentukan dimensi objek secara otomatis.
+Bounding-Box umumnya dibentuk menggunakan titik koordinat minimum dan maksimum pada sumbu \(x\) dan \(y\). Dengan memanfaatkan koordinat tersebut, sistem dapat menentukan dimensi objek secara otomatis.
 
   \begin{figure}[H]
   \centering
