@@ -33,8 +33,7 @@ def transform_size(excel_file, panjang_deteksi, lebar_deteksi, folder):
 
             file = df[df["nama_file"] == img]
             panjang_Gt = file.iloc[0]["panjang"]
-
-        #     print(panjang_Gt)
+            #print(panjang_Gt)
                 
             panjang_transformed = panjang_deteksi * (panjang_Gt / panjang_deteksi)
             lebar_transformed = lebar_deteksi * (panjang_Gt / panjang_deteksi)

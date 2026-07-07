@@ -72,15 +72,8 @@ if __name__ == "__main__":
         
         image = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
         filename = os.path.basename(img)
-        # filename = os.path.splitext(filename)[0]
         filename = filename.lower()
-        # folder_name = os.path.basename(os.path.dirname(img))
-        # folder_name = folder_name.lower()
-        # image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        # blurred_image = cv2.GaussianBlur(image, (3, 3), sigmaX=1)
-        # blurred_image = cv2.normalize(blurred_image, None, 0, 255, cv2.NORM_MINMAX)
-        # image = np.array(blurred_image)
-        # image = cv2.rotate(image, cv2.ROTATE_90_CLOCKWISE)
+
         
         GaussianSmooths = [GaussianSmooth(image)]
         GaussianSmooths = np.array(GaussianSmooths)
@@ -88,59 +81,31 @@ if __name__ == "__main__":
         Grad_X = Compute_Gradient_X(GaussianSmooths)
         Grad_Y = Compute_Gradient_Y(GaussianSmooths)
         
-        # Ixx = AutoCorrelation_Ixx(Gradient_X)
-        # Ixy = AutoCorrelation_Ixy(Gradient_X, Gradient_Y)
-        # Iyy = AutoCorrelation_Iyy(Gradient_Y)
         
         xx, xy, yy = AutoCorrelation(Grad_X, Grad_Y)
         
         Harespon = Harris(xx, xy, yy)
         all_corners = thresholding(GaussianSmooths, Harespon)
     
-        # points = get_min_max_points_direct(all_corners[0])
-        # print(f"Gambar {idx}: {points}")
-    
-        # center = get_center_from_bounds(points)
-        # print(f"Center: {center}")
-    
-        # cc = get_center_from_corners(all_corners[0])
-        # print(f"Center from corners: {cc}")
-
         ymin = int(np.min(all_corners[0][:, 0]))
         ymax = int(np.max(all_corners[0][:, 0]))
         xmin = int(np.min(all_corners[0][:, 1]))
         xmax = int(np.max(all_corners[0][:, 1]))
         
         print(f"Gambar {idx} : {filename}")
-        # print(np.min(all_corners[0], axis=0))
-        # print(np.max(all_corners[0], axis=0))
         Dx = abs(xmax - xmin)
         Dy = abs(ymax - ymin)
 
         save_path = os.path.join("Output/Box", filename)
         box = cv2.rectangle(image, (xmin, ymin), (xmax, ymax), (0, 0, 0), 5)
         cv2.imwrite(save_path, box)
-        # print(Dx, Dy)
 
         P = Dx * sk        
         L = Dy * sk
         
         transformed_values = transform_size("Size_ikan.xlsx", P, L, Fls)
-        # Pt, Lt = transform_size("Size_ikan.xlsx", P, L, Fls)
-        
-        # if "nila" in filename:
-        #     Pt, Lt = transform_size("Size_ikan.xlsx", "Nila", Fls, P, L)
-        # elif "lele" in filename:
-        #     Pt, Lt = transform_size("Size_ikan.xlsx", "Lele", Fls, P, L)
-        # elif "mas" in filename:
-        #     Pt, Lt = transform_size("Size_ikan.xlsx", "Mas", Fls, P, L)
-        
-        # else:
-        #     break
-        # luas = 0
-        # keliling_x = 0
+
         filename = os.path.splitext(filename)[0]
-        # +".jpg"
         for img in transformed_values:
             if img[0] == filename:       
                 luas = img[1] * img[2]
@@ -153,11 +118,12 @@ if __name__ == "__main__":
                 print(f"Luas ikan : {luas} cm^2")
                 print(f"Berat ikan : {Cw} gram")
                 
-        # Berat = akn * keliling_x
-        # for Berat in filename:
-        # print(f"Gambar {idx} : {filename}")
-        print(f"panjang deteksi (Pd) : {P} cm")
-        print(f"lebar deteksi (Ld) : {L} cm")
+
+        print(f"gradien X : {Grad_X}")
+        print(f"gradien Y : {Grad_Y}")
+        print(f"auto korelasi : {xx}, {xy}, {yy}")
+        # print(f"panjang deteksi (Pd) : {P} cm")
+        # print(f"lebar deteksi (Ld) : {L} cm")
 
         
         
