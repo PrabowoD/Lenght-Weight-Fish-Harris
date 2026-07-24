@@ -358,7 +358,6 @@ INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmro8t.tfm
 INPUT .\abstrak.tex
 INPUT .\abstrak.tex
 OUTPUT abstrak.aux
@@ -381,6 +380,7 @@ INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmbi8t.
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmbi8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmbi8r.tfm
 OUTPUT template-skripsi.toc
+INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmro8t.tfm
 INPUT .\template-skripsi.lof
 INPUT .\template-skripsi.lof
 INPUT template-skripsi.lof
@@ -527,40 +527,15 @@ INPUT .\gambar\Screenshot_3.jpg
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT .\gambar\IMG_20240121_131125.jpg
-INPUT .\gambar\IMG_20240121_131125.jpg
-INPUT .\gambar\IMG_20240121_131125.jpg
-INPUT .\gambar\IMG_20240121_131125.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_132544.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
-INPUT .\gambar\IMG_20240121_140044.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1.jpg
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
-INPUT .\gambar\IMG_20240121_132544 - Copy.jpg
 INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
 INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
 INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
@@ -568,36 +543,36 @@ INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
 INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
 INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
 INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - Output.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
-INPUT .\gambar\IMG_20240121_131125 - rotate.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
+INPUT .\gambar\csv Gradient X.png
+INPUT .\gambar\csv Gradient X.png
+INPUT .\gambar\csv Gradient X.png
+INPUT .\gambar\csv Gradient X.png
+INPUT .\gambar\csv Gradient X.png
+INPUT .\gambar\csv Gradient X.png
+INPUT .\gambar\csv Gradient X.png
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
-INPUT .\gambar\ikan_lele_induk_1_Harris.jpg
+INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Autokorelasi IXX.png
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
@@ -605,20 +580,6 @@ INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
-INPUT .\gambar\ikan_lele_induk_1_NMS.jpg
 INPUT .\gambar\ikan_nila_induk_1_NMS.jpg
 INPUT .\gambar\ikan_nila_induk_1_NMS.jpg
 INPUT .\gambar\ikan_nila_induk_1_NMS.jpg

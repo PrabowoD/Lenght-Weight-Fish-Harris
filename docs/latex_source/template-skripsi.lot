@@ -6,11 +6,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Hasil Deteksi}}{49}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Rata-Rata MAPE Ikan}}{49}{table.caption.37}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Hasil Evaluasi Akurasi}}{50}{table.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Gambar Ikan yang digunakan dalam penelitian}}{55}{table.B.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Nilai referensi ikan}}{59}{table.C.1}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Hasil pengukuran panjang dan berat ikan sebelum difoto}}{56}{table.C.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Hasil Estimasi Panjang dan Berat Ikan}}{58}{table.D.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Hasil Evaluasi MAPE}}{60}{table.E.1}%

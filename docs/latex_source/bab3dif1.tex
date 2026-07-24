@@ -27,7 +27,7 @@ Dimana hasil dari pemilihan tersebut akan menjadi cara untuk dapat menghitung pa
 \begin{figure}
     \centering
     \includegraphics[scale= 0.6]{gambar/Flowchar Penetianv2.png}
-    \caption{Alur Penelitian}\label{Alur Penelitian}
+    \caption{Alur penelitian}\label{Alur Penelitian}
 \end{figure}
 
 \section{Pemrosesan Citra}
@@ -61,6 +61,7 @@ Kernel sobel terdiri dari dua matriks \(3*3\), yang bertujuan untuk menghitung g
 \end{itemize}
     Berikut adalah kernel yang akan digunakan dalam operator sobel:
 \begin{enumerate}
+    \setlength{\parskip}{0pt}
     \item Kernel Sobel Horizontal
     \begin{equation*}
         S_{x} = 
@@ -155,6 +156,7 @@ Dimana \emph{MaxLocal} \(R(i,j)\) adalah nilai maksimum yang berada disekitar pi
 \subsection{Memilih Piksel}
     Setelah sudut telah melalui Thresholding dan NMS, sudut-sudut tersebut akan dipilih berdasarkan kriteria yang telah ditentukan.
 \begin{enumerate}
+    \setlength{\parskip}{0pt}
     \item Titik kanan berada pada bagian ekor.
     \item Titik kiri pada bagian mulut.
     \item Titik atas pada bagian sirip atas.
@@ -164,6 +166,7 @@ Dimana \emph{MaxLocal} \(R(i,j)\) adalah nilai maksimum yang berada disekitar pi
 Pemilihan empat kriteria tersebut untuk mepermudah dalam mencari panjang dan lebar dari ikan.~penghitungan panjang akan menggunakan sudut pada mulut dan ekor ikan, sedangkan lebar akan mengguanakan sirip atas dan bagian bawah perut ikan. 
 namun kriteria tersebut berubah jika jenis ikan yang digunakan seperti ikan lele, maka:
 \begin{enumerate}
+    \setlength{\parskip}{0pt}
     \item Titik kanan pada bagian ekor.
     \item Titik kiri pada bagian mulut.
     \item Titik atas pada bagian sirip kanan.
@@ -230,6 +233,7 @@ Setelah itu, citra grayscale akan diproses menggunakan metode \emph{smoothing Ga
 \subsection{Deteksi Sudut}
     Setelah tahap pra-processing selesai, sistem akan melakukan deteksi sudut menggunakan metode \emph{Harris-Corner Detection}. Langkah-langkah yang dilakukan adalah sebagai berikut: 
     \begin{enumerate}
+        \setlength{\parskip}{0pt}
             \item \textbf{Perhitungan Gradien}: Sistem akan menghitung gradien pada setiap piksel citra yang telah dihaluskan menggunakan kernel Sobel.
             \item \textbf{Matriks Autokorelasi}: Hasil gradien akan digunakan untuk membentuk matriks autokorelasi \(M\) yang berisi informasi tentang perubahan intensitas pada citra.
             \item \textbf{Respon Harris}: Sistem akan menghitung nilai respon Harris \(R\) untuk setiap piksel menggunakan matriks \(M\).
@@ -240,6 +244,7 @@ Setelah itu, citra grayscale akan diproses menggunakan metode \emph{smoothing Ga
 \subsection{Pengukuran Panjang dan Berat}
     Setelah titik-titik sudut utama diperoleh, sistem akan menghitung panjang ikan berdasarkan jarak Euclidean antara dua titik terjauh yang terdeteksi. Langkah-langkah yang dilakukan adalah sebagai berikut:
 \begin{enumerate}
+    \setlength{\parskip}{0pt}
     \item \textbf{Penghitungan Panjang}: Sistem akan menghitung panjang ikan menggunakan rumus jarak Euclidean antara dua titik sudut terjauh.
     \item \textbf{Penghitungan Skala}: Sistem akan menentukan faktor skala untuk mengonversi panjang dari satuan piksel ke satuan nyata, menggunakan objek referensi atau resolusi gambar.
     \item \textbf{Estimasi Berat}: Sistem akan mengestimasi berat ikan menggunakan rumus interpolasi linier berdasarkan data panjang dan berat ikan yang telah diketahui sebelumnya.

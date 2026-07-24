@@ -49,12 +49,12 @@ if __name__ == "__main__":
         rotated_pca_image = PCa_rotate_image(GaussianSmooths[0], all_corners[0])
         
         # os.makedirs(output_folder, exist_ok=True)
-        save_path = os.path.join("Output/Rotated/UjiCoba", filename)
+        save_path = os.path.join("Output/Rotated/UjiCoba2", filename)
         cv2.imwrite(save_path, rotated_pca_image)
 
     #Max Min Coordinate
     
-    Fls = "Output/Rotated/UjiCoba"
+    Fls = "Output/Rotated/UjiCoba2"
     imps = [os.path.join(Fls, f) for f in os.listdir(Fls)
                    if f.lower().endswith((".jpg", ".png", ".jpeg"))]
     #df = pd.ExcelFile("Size_ikan.xlsx")

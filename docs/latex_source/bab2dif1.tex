@@ -153,6 +153,7 @@ G(x,\sigma) = g(\sigma) * I(x)
 
 di mana:
 \begin{enumerate}
+  \setlength{\parskip}{0pt}
   \item \(G(x,\sigma)\) adalah citra hasil konvolusi pada skala \(\sigma\).
   \item \(g(\sigma)\) adalah kernel Gaussian dengan parameter \(\sigma\).
   \item \(I(x)\) adalah citra input yang akan dihaluskan.
@@ -168,7 +169,7 @@ Dengan berkurangnya noise, titik sudut yang dihasilkan menjadi lebih stabil dan 
 \begin{figure}[H]
   \centering{}
   \includegraphics[keepaspectratio, width=10cm]{gambar/Uniform Gaussian kernel.jpg}
-  \caption{Uniform Gaussian Kernel}\label{fig:Uniform Gaussian kernel}
+  \caption{Uniform gaussian kernel}\label{fig:Uniform Gaussian kernel}
 \end{figure}
 
 
@@ -279,7 +280,7 @@ Oleh karena itu, metode Harris sering dipakai pada aplikasi yang memerlukan dete
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{gambar/harris_corner_detection_example.jpg}
-  \caption{Contoh hasil deteksi sudut menggunakan metode Harris-Corner Detection}\label{fig:harris-corner-detection}
+  \caption{Contoh hasil deteksi sudut menggunakan metode harris-corner detection}\label{fig:harris-corner-detection}
 \end{figure}
 
 Prinsip dasar Harris-Corner Detection adalah menganalisis perubahan intensitas pada suatu jendela kecil (\emph{window}) ketika digeser ke berbagai arah. Jika perubahan intensitas kecil pada semua arah, maka area tersebut merupakan area datar (\emph{flat area}).

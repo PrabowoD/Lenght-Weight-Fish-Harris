@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.17)  29 JUN 2026 07:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.17)  24 JUL 2026 07:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -777,32 +777,32 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 170.
+(biblatex)                Setting 'uniquename=init' on input line 171.
 
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 170.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 171.
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (template-skripsi.aux (kata-pengantar.aux) (abstrak.aux) (abstract.aux) (bab1.aux) (bab2dif1.aux) (bab3dif2.aux) (bab4.aux) (bab5.aux) (lampiran.aux))
 \openout1 = `template-skripsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count487
@@ -850,7 +850,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 170.
+Package hyperref Info: Link coloring OFF on input line 171.
 (template-skripsi.out) (template-skripsi.out)
 \@outlinefile=\write4
 \openout4 = `template-skripsi.out'.
@@ -882,7 +882,7 @@ Package biblatex Info: ... file 'bahasa.lbx' not found.
 
 
 Package biblatex Warning: Language 'bahasa' not supported.
-(biblatex)                Using dummy definitions on input line 170.
+(biblatex)                Using dummy definitions on input line 171.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -892,27 +892,27 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'template-skripsi.bbl' found.
 (template-skripsi.bbl)
-Package biblatex Info: Reference section=0 on input line 170.
-Package biblatex Info: Reference segment=0 on input line 170.
+Package biblatex Info: Reference section=0 on input line 171.
+Package biblatex Info: Reference segment=0 on input line 171.
 \c@lstlisting=\count493
-<gambar/logounj.png, id=291, 513.92pt x 513.92pt>
+<gambar/logounj.png, id=299, 513.92pt x 513.92pt>
 File: gambar/logounj.png Graphic file (type png)
 <use gambar/logounj.png>
-Package pdftex.def Info: gambar/logounj.png  used on input line 172.
+Package pdftex.def Info: gambar/logounj.png  used on input line 173.
 (pdftex.def)             Requested size: 162.7473pt x 162.74825pt.
-<skripsi/lembar pengesahan.pdf, id=293, 614.295pt x 845.1575pt>
+<skripsi/lembar pengesahan.pdf, id=301, 614.295pt x 845.1575pt>
 File: skripsi/lembar pengesahan.pdf Graphic file (type pdf)
 <use skripsi/lembar pengesahan.pdf>
-Package pdftex.def Info: skripsi/lembar pengesahan.pdf  used on input line 180.
+Package pdftex.def Info: skripsi/lembar pengesahan.pdf  used on input line 181.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<skripsi/lembar pengesahan.pdf, id=295, page=1, 614.295pt x 845.1575pt>
+<skripsi/lembar pengesahan.pdf, id=303, page=1, 614.295pt x 845.1575pt>
 File: skripsi/lembar pengesahan.pdf Graphic file (type pdf)
 <use skripsi/lembar pengesahan.pdf, page 1>
-Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 180.
+Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
 File: skripsi/lembar pengesahan.pdf Graphic file (type pdf)
 <use skripsi/lembar pengesahan.pdf, page 1>
-Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 180.
+Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
 
 
@@ -921,17 +921,17 @@ Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input lin
 {C:/Users/USER/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./gambar/logounj.png>]
 File: skripsi/lembar pengesahan.pdf Graphic file (type pdf)
 <use skripsi/lembar pengesahan.pdf, page 1>
-Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 180.
+Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
 File: skripsi/lembar pengesahan.pdf Graphic file (type pdf)
 <use skripsi/lembar pengesahan.pdf, page 1>
-Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 180.
+Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
 
 
 File: skripsi/lembar pengesahan.pdf Graphic file (type pdf)
 <use skripsi/lembar pengesahan.pdf, page 1>
-Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 180.
+Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
 [2
 
@@ -939,7 +939,7 @@ Package pdftex.def Info: skripsi/lembar pengesahan.pdf , page1 used on input lin
 \openout2 = `kata-pengantar.aux'.
 
  (kata-pengantar.tex
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 30.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 28.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ))
@@ -948,13 +948,11 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 
 ]
-
-[4]
 \openout2 = `abstrak.aux'.
 
  (abstrak.tex)
 
-[5
+[4
 
 
 
@@ -964,14 +962,14 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
  (abstract.tex)
 
-[6
+[5
 
 
 
 
 ] (template-skripsi.toc
 
-[7
+[6
 
 
 
@@ -981,15 +979,13 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 
 
-[8]
-
-[9] (template-skripsi.lof)
+[7] (template-skripsi.lof)
 \tf@lof=\write6
 \openout6 = `template-skripsi.lof'.
 
 
 
-[10
+[8
 
 ] (template-skripsi.lot)
 \tf@lot=\write7
@@ -997,7 +993,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 
 
-[11
+[9
 
 ]
 \openout2 = `bab1.aux'.
@@ -1021,12 +1017,12 @@ BAB I.
 
  (bab2dif1.tex
 BAB II.
-<gambar/Colour_pixel.jpg, id=536, 1405.25pt x 936.49875pt>
+<gambar/Colour_pixel.jpg, id=543, 1405.25pt x 936.49875pt>
 File: gambar/Colour_pixel.jpg Graphic file (type jpg)
 <use gambar/Colour_pixel.jpg>
 Package pdftex.def Info: gambar/Colour_pixel.jpg  used on input line 17.
 (pdftex.def)             Requested size: 369.88582pt x 246.49907pt.
-<gambar/Slide2.jpg, id=540, 722.7pt x 542.025pt>
+<gambar/Slide2.jpg, id=547, 722.7pt x 542.025pt>
 File: gambar/Slide2.jpg Graphic file (type jpg)
 <use gambar/Slide2.jpg>
 Package pdftex.def Info: gambar/Slide2.jpg  used on input line 29.
@@ -1041,12 +1037,12 @@ Package pdftex.def Info: gambar/Slide2.jpg  used on input line 29.
  <./gambar/Colour_pixel.jpg>]
 
 [6 <./gambar/Slide2.jpg>]
-<gambar/IMG_20240121_131125.jpg, id=562, 4175.6pt x 1879.02pt>
+<gambar/IMG_20240121_131125.jpg, id=569, 4175.6pt x 1879.02pt>
 File: gambar/IMG_20240121_131125.jpg Graphic file (type jpg)
 <use gambar/IMG_20240121_131125.jpg>
 Package pdftex.def Info: gambar/IMG_20240121_131125.jpg  used on input line 77.
 (pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-<gambar/IMG_20240121_131125 copy.jpg, id=563, 4175.6pt x 1879.02pt>
+<gambar/IMG_20240121_131125 copy.jpg, id=570, 4175.6pt x 1879.02pt>
 File: gambar/IMG_20240121_131125 copy.jpg Graphic file (type jpg)
 <use gambar/IMG_20240121_131125 copy.jpg>
 Package pdftex.def Info: gambar/IMG_20240121_131125 copy.jpg  used on input line 83.
@@ -1056,26 +1052,26 @@ Package pdftex.def Info: gambar/IMG_20240121_131125 copy.jpg  used on input line
 [7]
 
 [8 <./gambar/IMG_20240121_131125.jpg> <./gambar/IMG_20240121_131125 copy.jpg>]
-<gambar/Uniform Gaussian kernel.jpg, id=581, 290.88675pt x 78.2925pt>
+<gambar/Uniform Gaussian kernel.jpg, id=587, 290.88675pt x 78.2925pt>
 File: gambar/Uniform Gaussian kernel.jpg Graphic file (type jpg)
 <use gambar/Uniform Gaussian kernel.jpg>
-Package pdftex.def Info: gambar/Uniform Gaussian kernel.jpg  used on input line 170.
+Package pdftex.def Info: gambar/Uniform Gaussian kernel.jpg  used on input line 171.
 (pdftex.def)             Requested size: 284.52756pt x 76.58275pt.
 
 
 [9 <./gambar/Uniform Gaussian kernel.jpg>]
 
 [10]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 263.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 264.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 [11]
-<gambar/harris_corner_detection_example.jpg, id=611, 526.96875pt x 357.58594pt>
+<gambar/harris_corner_detection_example.jpg, id=618, 526.96875pt x 357.58594pt>
 File: gambar/harris_corner_detection_example.jpg Graphic file (type jpg)
 <use gambar/harris_corner_detection_example.jpg>
-Package pdftex.def Info: gambar/harris_corner_detection_example.jpg  used on input line 281.
+Package pdftex.def Info: gambar/harris_corner_detection_example.jpg  used on input line 282.
 (pdftex.def)             Requested size: 325.50082pt x 220.88799pt.
 
 
@@ -1088,18 +1084,18 @@ Package pdftex.def Info: gambar/harris_corner_detection_example.jpg  used on inp
 [15]
 
 [16]
-<gambar/opencv_rotate_header.png, id=643, 702.625pt x 451.6875pt>
+<gambar/opencv_rotate_header.png, id=650, 702.625pt x 451.6875pt>
 File: gambar/opencv_rotate_header.png Graphic file (type png)
 <use gambar/opencv_rotate_header.png>
-Package pdftex.def Info: gambar/opencv_rotate_header.png  used on input line 441.
+Package pdftex.def Info: gambar/opencv_rotate_header.png  used on input line 442.
 (pdftex.def)             Requested size: 325.50082pt x 209.2537pt.
 
 
 [17 <./gambar/opencv_rotate_header.png>]
-<gambar/Bounding B Car.jpg, id=653, 478.78876pt x 352.31625pt>
+<gambar/Bounding B Car.jpg, id=660, 478.78876pt x 352.31625pt>
 File: gambar/Bounding B Car.jpg Graphic file (type jpg)
 <use gambar/Bounding B Car.jpg>
-Package pdftex.def Info: gambar/Bounding B Car.jpg  used on input line 457.
+Package pdftex.def Info: gambar/Bounding B Car.jpg  used on input line 458.
 (pdftex.def)             Requested size: 325.50082pt x 239.51811pt.
 
 
@@ -1114,7 +1110,7 @@ Package pdftex.def Info: gambar/Bounding B Car.jpg  used on input line 457.
 
  (bab3dif2.tex
 BAB III.
-<gambar/Alur Penelitian.png, id=689, 462.72874pt x 412.54124pt>
+<gambar/Alur Penelitian.png, id=695, 462.72874pt x 412.54124pt>
 File: gambar/Alur Penelitian.png Graphic file (type png)
 <use gambar/Alur Penelitian.png>
 Package pdftex.def Info: gambar/Alur Penelitian.png  used on input line 14.
@@ -1129,11 +1125,11 @@ Package pdftex.def Info: gambar/Alur Penelitian.png  used on input line 14.
  <./gambar/Alur Penelitian.png>]
 
 [23]
-<gambar/Alur Pra-Processing.png, id=701, 121.45375pt x 703.62875pt>
+<gambar/Alur Pra-Processing.png, id=708, 497.86pt x 282.05376pt>
 File: gambar/Alur Pra-Processing.png Graphic file (type png)
 <use gambar/Alur Pra-Processing.png>
 Package pdftex.def Info: gambar/Alur Pra-Processing.png  used on input line 75.
-(pdftex.def)             Requested size: 85.01703pt x 492.53676pt.
+(pdftex.def)             Requested size: 348.49962pt x 197.43626pt.
 
 
 [24]
@@ -1141,48 +1137,46 @@ Package pdftex.def Info: gambar/Alur Pra-Processing.png  used on input line 75.
 [25 <./gambar/Alur Pra-Processing.png>]
 
 [26]
-<gambar/Alur Harris.png, id=720, 121.45375pt x 743.77875pt>
+<gambar/Alur Harris.png, id=727, 452.69125pt x 261.97874pt>
 File: gambar/Alur Harris.png Graphic file (type png)
 <use gambar/Alur Harris.png>
 Package pdftex.def Info: gambar/Alur Harris.png  used on input line 142.
-(pdftex.def)             Requested size: 85.01703pt x 520.64157pt.
-<gambar/Alur Gradient.png, id=721, 362.35374pt x 573.14125pt>
+(pdftex.def)             Requested size: 316.88171pt x 183.38387pt.
+<gambar/Alur Gradient.png, id=728, 362.35374pt x 573.14125pt>
 File: gambar/Alur Gradient.png Graphic file (type png)
 <use gambar/Alur Gradient.png>
 Package pdftex.def Info: gambar/Alur Gradient.png  used on input line 150.
 (pdftex.def)             Requested size: 181.17642pt x 286.56992pt.
 
 
-[27]
+[27 <./gambar/Alur Harris.png>]
 
-[28 <./gambar/Alur Harris.png>]
+[28 <./gambar/Alur Gradient.png>]
 
-[29 <./gambar/Alur Gradient.png>]
+[29]
 
 [30]
-
-[31]
-<gambar/Alur Penghitungan panjang dan Estimasi Berat.png, id=754, 362.35374pt x 834.11626pt>
+<gambar/Alur Penghitungan panjang dan Estimasi Berat.png, id=757, 362.35374pt x 834.11626pt>
 File: gambar/Alur Penghitungan panjang dan Estimasi Berat.png Graphic file (type png)
 <use gambar/Alur Penghitungan panjang dan Estimasi Berat.png>
 Package pdftex.def Info: gambar/Alur Penghitungan panjang dan Estimasi Berat.png  used on input line 238.
 (pdftex.def)             Requested size: 181.17642pt x 417.05711pt.
 
 
-[32]
+[31]
 
-[33 <./gambar/Alur Penghitungan panjang dan Estimasi Berat.png>]
+[32 <./gambar/Alur Penghitungan panjang dan Estimasi Berat.png>]
 
-[34]
+[33]
 
-[35])
+[34])
 
-[36]
+[35]
 \openout2 = `bab4.aux'.
 
  (bab4.tex
 BAB IV.
-<gambar/Screenshot_3.jpg, id=781, 921.4425pt x 508.90125pt>
+<gambar/Screenshot_3.jpg, id=784, 921.4425pt x 508.90125pt>
 File: gambar/Screenshot_3.jpg Graphic file (type jpg)
 <use gambar/Screenshot_3.jpg>
 Package pdftex.def Info: gambar/Screenshot_3.jpg  used on input line 14.
@@ -1190,354 +1184,344 @@ Package pdftex.def Info: gambar/Screenshot_3.jpg  used on input line 14.
 (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-File: gambar/IMG_20240121_131125.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_131125.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_131125.jpg  used on input line 35.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/IMG_20240121_132544.jpg, id=782, 4175.6pt x 1879.02pt>
-File: gambar/IMG_20240121_132544.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_132544.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_132544.jpg  used on input line 40.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/IMG_20240121_140044.jpg, id=783, 4175.6pt x 1879.02pt>
-File: gambar/IMG_20240121_140044.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_140044.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_140044.jpg  used on input line 45.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
+<gambar/ikan_Nila_Induk_1.jpg, id=785, 4175.6pt x 1879.02pt>
+File: gambar/ikan_Nila_Induk_1.jpg Graphic file (type jpg)
+<use gambar/ikan_Nila_Induk_1.jpg>
+Package pdftex.def Info: gambar/ikan_Nila_Induk_1.jpg  used on input line 33.
+(pdftex.def)             Requested size: 398.33858pt x 179.22554pt.
 
 
-[37
+[36
 
 
 
 
  <./gambar/Screenshot_3.jpg>]
-<gambar/IMG_20240121_131125 - Copy.jpg, id=791, 4175.6pt x 1879.02pt>
-File: gambar/IMG_20240121_131125 - Copy.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_131125 - Copy.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_131125 - Copy.jpg  used on input line 55.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/IMG_20240121_132544 - Copy.jpg, id=792, 4175.6pt x 1879.02pt>
-File: gambar/IMG_20240121_132544 - Copy.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_132544 - Copy.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_132544 - Copy.jpg  used on input line 60.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
 <gambar/IMG_20240121_135842 - Copy.jpg, id=793, 4175.6pt x 1879.02pt>
 File: gambar/IMG_20240121_135842 - Copy.jpg Graphic file (type jpg)
 <use gambar/IMG_20240121_135842 - Copy.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_135842 - Copy.jpg  used on input line 65.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/IMG_20240121_131125 - Output.jpg, id=794, 4175.6pt x 1879.02pt>
-File: gambar/IMG_20240121_131125 - Output.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_131125 - Output.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_131125 - Output.jpg  used on input line 106.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-<gambar/IMG_20240121_131125 - rotate.jpg, id=795, 4175.6pt x 1879.02pt>
-File: gambar/IMG_20240121_131125 - rotate.jpg Graphic file (type jpg)
-<use gambar/IMG_20240121_131125 - rotate.jpg>
-Package pdftex.def Info: gambar/IMG_20240121_131125 - rotate.jpg  used on input line 111.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
+Package pdftex.def Info: gambar/IMG_20240121_135842 - Copy.jpg  used on input line 39.
+(pdftex.def)             Requested size: 398.33858pt x 179.22554pt.
 
 
-[38 <./gambar/IMG_20240121_132544.jpg> <./gambar/IMG_20240121_140044.jpg> <./gambar/IMG_20240121_131125 - Copy.jpg> <./gambar/IMG_20240121_132544 - Copy.jpg> <./gambar/IMG_20240121_135842 - Copy.jpg>]
+[37 <./gambar/ikan_Nila_Induk_1.jpg> <./gambar/IMG_20240121_135842 - Copy.jpg>]
+<gambar/ikan_Nila_Induk_1_output.jpg, id=798, 4175.6pt x 1879.02pt>
+File: gambar/ikan_Nila_Induk_1_output.jpg Graphic file (type jpg)
+<use gambar/ikan_Nila_Induk_1_output.jpg>
+Package pdftex.def Info: gambar/ikan_Nila_Induk_1_output.jpg  used on input line 76.
+(pdftex.def)             Requested size: 227.62204pt x 102.4146pt.
+<gambar/ikan_Nila_Induk_1_rotate2.jpg, id=799, 4175.6pt x 1879.02pt>
+File: gambar/ikan_Nila_Induk_1_rotate2.jpg Graphic file (type jpg)
+<use gambar/ikan_Nila_Induk_1_rotate2.jpg>
+Package pdftex.def Info: gambar/ikan_Nila_Induk_1_rotate2.jpg  used on input line 82.
+(pdftex.def)             Requested size: 227.62204pt x 102.4146pt.
 
-[39 <./gambar/IMG_20240121_131125 - Output.jpg> <./gambar/IMG_20240121_131125 - rotate.jpg>]
+
+[38 <./gambar/ikan_Nila_Induk_1_output.jpg>]
+
+[39 <./gambar/ikan_Nila_Induk_1_rotate2.jpg>]
+<gambar/csv Gradient X.png, id=845, 931.98187pt x 692.5875pt>
+File: gambar/csv Gradient X.png Graphic file (type png)
+<use gambar/csv Gradient X.png>
+Package pdftex.def Info: gambar/csv Gradient X.png  used on input line 140.
+(pdftex.def)             Requested size: 325.50082pt x 241.89142pt.
+
 
 [40]
 
-[41]
-<gambar/ikan_mas_1_Harris.jpg, id=878, 4175.6pt x 1879.02pt>
-File: gambar/ikan_mas_1_Harris.jpg Graphic file (type jpg)
-<use gambar/ikan_mas_1_Harris.jpg>
-Package pdftex.def Info: gambar/ikan_mas_1_Harris.jpg  used on input line 226.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-<gambar/ikan_lele_induk_1_Harris.jpg, id=879, 4175.6pt x 1879.02pt>
-File: gambar/ikan_lele_induk_1_Harris.jpg Graphic file (type jpg)
-<use gambar/ikan_lele_induk_1_Harris.jpg>
-Package pdftex.def Info: gambar/ikan_lele_induk_1_Harris.jpg  used on input line 231.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-<gambar/ikan_nila_induk_1_Harris.jpg, id=880, 4175.6pt x 1879.02pt>
+[41 <./gambar/csv Gradient X.png>]
+<gambar/csv Autokorelasi IXX.png, id=879, 934.99312pt x 693.34032pt>
+File: gambar/csv Autokorelasi IXX.png Graphic file (type png)
+<use gambar/csv Autokorelasi IXX.png>
+Package pdftex.def Info: gambar/csv Autokorelasi IXX.png  used on input line 170.
+(pdftex.def)             Requested size: 325.50082pt x 241.37146pt.
+
+
+[42 <./gambar/csv Autokorelasi IXX.png>]
+<gambar/ikan_nila_induk_1_Harris.jpg, id=892, 4175.6pt x 1879.02pt>
 File: gambar/ikan_nila_induk_1_Harris.jpg Graphic file (type jpg)
 <use gambar/ikan_nila_induk_1_Harris.jpg>
-Package pdftex.def Info: gambar/ikan_nila_induk_1_Harris.jpg  used on input line 236.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
+Package pdftex.def Info: gambar/ikan_nila_induk_1_Harris.jpg  used on input line 205.
+(pdftex.def)             Requested size: 398.33858pt x 179.22554pt.
 
 
-[42 <./gambar/ikan_mas_1_Harris.jpg> <./gambar/ikan_lele_induk_1_Harris.jpg> <./gambar/ikan_nila_induk_1_Harris.jpg>]
-<gambar/ikan_mas_1_NMS.jpg, id=885, 4175.6pt x 1879.02pt>
-File: gambar/ikan_mas_1_NMS.jpg Graphic file (type jpg)
-<use gambar/ikan_mas_1_NMS.jpg>
-Package pdftex.def Info: gambar/ikan_mas_1_NMS.jpg  used on input line 284.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-<gambar/ikan_lele_induk_1_NMS.jpg, id=886, 4175.6pt x 1879.02pt>
-File: gambar/ikan_lele_induk_1_NMS.jpg Graphic file (type jpg)
-<use gambar/ikan_lele_induk_1_NMS.jpg>
-Package pdftex.def Info: gambar/ikan_lele_induk_1_NMS.jpg  used on input line 289.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-<gambar/ikan_nila_induk_1_NMS.jpg, id=887, 4175.6pt x 1879.02pt>
-File: gambar/ikan_nila_induk_1_NMS.jpg Graphic file (type jpg)
-<use gambar/ikan_nila_induk_1_NMS.jpg>
-Package pdftex.def Info: gambar/ikan_nila_induk_1_NMS.jpg  used on input line 294.
-(pdftex.def)             Requested size: 113.81102pt x 51.20729pt.
-
-
-[43 <./gambar/ikan_mas_1_NMS.jpg> <./gambar/ikan_lele_induk_1_NMS.jpg> <./gambar/ikan_nila_induk_1_NMS.jpg>]
+[43 <./gambar/ikan_nila_induk_1_Harris.jpg>]
 
 [44]
-<gambar/ikan_mas_1 - Box.jpg, id=925, 4175.6pt x 1879.02pt>
+<gambar/ikan_nila_induk_1_NMS.jpg, id=917, 4175.6pt x 1879.02pt>
+File: gambar/ikan_nila_induk_1_NMS.jpg Graphic file (type jpg)
+<use gambar/ikan_nila_induk_1_NMS.jpg>
+Package pdftex.def Info: gambar/ikan_nila_induk_1_NMS.jpg  used on input line 249.
+(pdftex.def)             Requested size: 398.33858pt x 179.22554pt.
+
+
+[45 <./gambar/ikan_nila_induk_1_NMS.jpg>]
+<gambar/ikan_mas_1 - Box.jpg, id=934, 4175.6pt x 1879.02pt>
 File: gambar/ikan_mas_1 - Box.jpg Graphic file (type jpg)
 <use gambar/ikan_mas_1 - Box.jpg>
-Package pdftex.def Info: gambar/ikan_mas_1 - Box.jpg  used on input line 344.
+Package pdftex.def Info: gambar/ikan_mas_1 - Box.jpg  used on input line 297.
 (pdftex.def)             Requested size: 119.50148pt x 53.75905pt.
-<gambar/ikan_lele_1 - Box.jpg, id=926, 4175.6pt x 1879.02pt>
+<gambar/ikan_lele_1 - Box.jpg, id=935, 4175.6pt x 1879.02pt>
 File: gambar/ikan_lele_1 - Box.jpg Graphic file (type jpg)
 <use gambar/ikan_lele_1 - Box.jpg>
-Package pdftex.def Info: gambar/ikan_lele_1 - Box.jpg  used on input line 349.
+Package pdftex.def Info: gambar/ikan_lele_1 - Box.jpg  used on input line 302.
 (pdftex.def)             Requested size: 119.50148pt x 53.75905pt.
-<gambar/ikan_nila_1 - Box.jpg, id=927, 4175.6pt x 1879.02pt>
+<gambar/ikan_nila_1 - Box.jpg, id=936, 4175.6pt x 1879.02pt>
 File: gambar/ikan_nila_1 - Box.jpg Graphic file (type jpg)
 <use gambar/ikan_nila_1 - Box.jpg>
-Package pdftex.def Info: gambar/ikan_nila_1 - Box.jpg  used on input line 354.
+Package pdftex.def Info: gambar/ikan_nila_1 - Box.jpg  used on input line 307.
 (pdftex.def)             Requested size: 119.50148pt x 53.75905pt.
 
 
-[45 <./gambar/ikan_mas_1 - Box.jpg> <./gambar/ikan_lele_1 - Box.jpg> <./gambar/ikan_nila_1 - Box.jpg>]
+[46 <./gambar/ikan_mas_1 - Box.jpg> <./gambar/ikan_lele_1 - Box.jpg> <./gambar/ikan_nila_1 - Box.jpg>]
 
-[46]
+[47]
 
-[47] [48] [49]
+[48]
 
-[50])
+[49])
 
-[51]
+[50]
 \openout2 = `bab5.aux'.
 
  (bab5.tex
 BAB V.
 )
 
-[52
+[51
 
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 226.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 227.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-[53
+[52
 
 
 
 ]
 
-[54]
+[53]
 \openout2 = `lampiran.aux'.
 
  (lampiran.tex
 LAMPIRAN A.
 
 
-[55
+[54
 
 
 ]
 LAMPIRAN B.
-<gambar/Ikan Lele/ikan_Lele_Induk_1.jpg, id=1055, 4175.6pt x 1879.02pt>
+<gambar/Ikan Lele/ikan_Lele_Induk_1.jpg, id=1056, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Induk_1.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Induk_1.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Induk_1.jpg  used on input line 25.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Induk_1.jpg, id=1056, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Induk_1.jpg  used on input line 21.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Induk_1.jpg, id=1057, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Induk_1.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Induk_1.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Induk_1.jpg  used on input line 25.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Mas/ikan_Mas_1.jpg, id=1057, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Induk_1.jpg  used on input line 21.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Mas/ikan_Mas_1.jpg, id=1058, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Mas/ikan_Mas_1.jpg Graphic file (type jpg)
 <use gambar/Ikan Mas/ikan_Mas_1.jpg>
-Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_1.jpg  used on input line 25.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Induk_2.jpg, id=1058, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_1.jpg  used on input line 21.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Induk_2.jpg, id=1059, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Induk_2.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Induk_2.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Induk_2.jpg  used on input line 27.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Induk_2.jpg, id=1059, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Induk_2.jpg  used on input line 23.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Induk_2.jpg, id=1060, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Induk_2.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Induk_2.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Induk_2.jpg  used on input line 27.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Mas/ikan_Mas_2.jpg, id=1060, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Induk_2.jpg  used on input line 23.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Mas/ikan_Mas_2.jpg, id=1061, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Mas/ikan_Mas_2.jpg Graphic file (type jpg)
 <use gambar/Ikan Mas/ikan_Mas_2.jpg>
-Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_2.jpg  used on input line 27.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Induk_3.jpg, id=1061, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_2.jpg  used on input line 23.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Induk_3.jpg, id=1062, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Induk_3.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Induk_3.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Induk_3.jpg  used on input line 29.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Induk_3.jpg, id=1062, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Induk_3.jpg  used on input line 25.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Induk_3.jpg, id=1063, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Induk_3.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Induk_3.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Induk_3.jpg  used on input line 29.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Mas/ikan_Mas_3.jpg, id=1063, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Induk_3.jpg  used on input line 25.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Mas/ikan_Mas_3.jpg, id=1064, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Mas/ikan_Mas_3.jpg Graphic file (type jpg)
 <use gambar/Ikan Mas/ikan_Mas_3.jpg>
-Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_3.jpg  used on input line 29.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg, id=1064, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_3.jpg  used on input line 25.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg, id=1065, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg  used on input line 31.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg, id=1065, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg  used on input line 27.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg, id=1066, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg  used on input line 31.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Mas/ikan_Mas_4.jpg, id=1066, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg  used on input line 27.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Mas/ikan_Mas_4.jpg, id=1067, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Mas/ikan_Mas_4.jpg Graphic file (type jpg)
 <use gambar/Ikan Mas/ikan_Mas_4.jpg>
-Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_4.jpg  used on input line 31.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg, id=1067, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_4.jpg  used on input line 27.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg, id=1068, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg  used on input line 33.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg, id=1068, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg  used on input line 29.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg, id=1069, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg  used on input line 33.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Mas/ikan_Mas_5.jpg, id=1069, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg  used on input line 29.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Mas/ikan_Mas_5.jpg, id=1070, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Mas/ikan_Mas_5.jpg Graphic file (type jpg)
 <use gambar/Ikan Mas/ikan_Mas_5.jpg>
-Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_5.jpg  used on input line 33.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg, id=1070, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_5.jpg  used on input line 29.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg, id=1071, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg  used on input line 35.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg, id=1071, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg  used on input line 31.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg, id=1072, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg  used on input line 35.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Mas/ikan_Mas_6.jpg, id=1072, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg  used on input line 31.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Mas/ikan_Mas_6.jpg, id=1073, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Mas/ikan_Mas_6.jpg Graphic file (type jpg)
 <use gambar/Ikan Mas/ikan_Mas_6.jpg>
-Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_6.jpg  used on input line 35.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg, id=1073, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Mas/ikan_Mas_6.jpg  used on input line 31.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg, id=1074, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg  used on input line 37.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg, id=1074, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg  used on input line 33.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg, id=1075, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg  used on input line 37.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg, id=1075, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg  used on input line 33.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg, id=1076, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg  used on input line 39.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg, id=1076, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg  used on input line 35.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg, id=1077, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg  used on input line 39.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg, id=1077, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg  used on input line 35.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg, id=1078, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg  used on input line 41.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg, id=1078, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg  used on input line 37.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg, id=1079, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg  used on input line 41.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg, id=1079, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg  used on input line 37.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg, id=1080, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg  used on input line 43.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg, id=1080, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg  used on input line 39.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg, id=1081, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg  used on input line 43.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg, id=1081, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg  used on input line 39.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg, id=1082, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg  used on input line 45.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg, id=1082, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg  used on input line 41.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg, id=1083, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg  used on input line 45.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg, id=1083, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg  used on input line 41.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg, id=1084, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg  used on input line 47.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg, id=1084, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg  used on input line 43.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg, id=1085, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg  used on input line 47.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg, id=1085, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg  used on input line 43.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg, id=1086, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg Graphic file (type jpg)
 <use gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg>
-Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg  used on input line 49.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
-<gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg, id=1086, 4175.6pt x 1879.02pt>
+Package pdftex.def Info: gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg  used on input line 45.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+<gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg, id=1087, 4175.6pt x 1879.02pt>
 File: gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg Graphic file (type jpg)
 <use gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg>
-Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg  used on input line 49.
-(pdftex.def)             Requested size: 85.35826pt x 38.39113pt.
+Package pdftex.def Info: gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg  used on input line 45.
+(pdftex.def)             Requested size: 56.9055pt x 25.60364pt.
+
+
+[55
+
+ <./gambar/Ikan Lele/ikan_Lele_Induk_1.jpg> <./gambar/Ikan Nila/ikan_Nila_Induk_1.jpg> <./gambar/Ikan Mas/ikan_Mas_1.jpg> <./gambar/Ikan Lele/ikan_Lele_Induk_2.jpg> <./gambar/Ikan Nila/ikan_Nila_Induk_2.jpg> <./gambar/Ikan Mas/ikan_Mas_2.jpg> <./gambar/Ikan Lele/ikan_Lele_Induk_3.jpg> <./gambar/Ikan Nila/ikan_Nila_Induk_3.jpg> <./gambar/Ikan Mas/ikan_Mas_3.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg> <./gambar/Ikan Mas/ikan_Mas_4.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg> <./gambar/Ikan Mas/ikan_Mas_5.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg> <./gambar/Ikan Mas/ikan_Mas_6.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg>]
+LAMPIRAN C.
 [56
 
- <./gambar/Ikan Lele/ikan_Lele_Induk_1.jpg> <./gambar/Ikan Nila/ikan_Nila_Induk_1.jpg> <./gambar/Ikan Mas/ikan_Mas_1.jpg> <./gambar/Ikan Lele/ikan_Lele_Induk_2.jpg> <./gambar/Ikan Nila/ikan_Nila_Induk_2.jpg> <./gambar/Ikan Mas/ikan_Mas_2.jpg> <./gambar/Ikan Lele/ikan_Lele_Induk_3.jpg> <./gambar/Ikan Nila/ikan_Nila_Induk_3.jpg> <./gambar/Ikan Mas/ikan_Mas_3.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_4.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_4.jpg> <./gambar/Ikan Mas/ikan_Mas_4.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_5.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_5.jpg> <./gambar/Ikan Mas/ikan_Mas_5.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_6.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_6.jpg> <./gambar/Ikan Mas/ikan_Mas_6.jpg> <./gambar/Ikan Lele/ikan_Lele_Pembesaran_7.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_7.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_8.jpg> <./gambar/Ikan Nila/ikan_Nila_Kdua_8.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_9.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_9.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_10.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_10.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_11.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_11.jpg>]
+]
 
-[57 <./gambar/Ikan Lele/ikan_Lele_Pedaging_12.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_12.jpg> <./gambar/Ikan Lele/ikan_Lele_Pedaging_13.jpg> <./gambar/Ikan Nila/ikan_Nila_Kbawah_13.jpg>]
-LAMPIRAN C.
+[57]
+LAMPIRAN D.
 [58
+
+]
+
+[59]
+LAMPIRAN E.
+[60
 
 ])
 
-[59] (template-skripsi.aux (kata-pengantar.aux) (abstrak.aux) (abstract.aux) (bab1.aux) (bab2dif1.aux) (bab3dif2.aux) (bab4.aux) (bab5.aux) (lampiran.aux))
+[61] (template-skripsi.aux (kata-pengantar.aux) (abstrak.aux) (abstract.aux) (bab1.aux) (bab2dif1.aux) (bab3dif2.aux) (bab4.aux) (bab5.aux) (lampiran.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `template-skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: 759D4C7947F04D93A68242C43A927640;10711.
+(rerunfilecheck)             Checksum: C1C6E24FF2FD6AB41E887CE210A8BC1D;11290.
 Package logreq Info: Writing requests to 'template-skripsi.run.xml'.
 \openout1 = `template-skripsi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26617 strings out of 468133
- 472038 string characters out of 5431196
- 1805391 words of memory out of 5000000
- 54427 multiletter control sequences out of 15000+600000
+ 26591 strings out of 468133
+ 470704 string characters out of 5431196
+ 1804570 words of memory out of 5000000
+ 54397 multiletter control sequences out of 15000+600000
  672913 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,84p,2258b,2279s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template-skripsi.pdf (70 pages, 88371895 bytes).
+Output written on template-skripsi.pdf (70 pages, 81567693 bytes).
 PDF statistics:
- 1246 PDF objects out of 1440 (max. 8388607)
- 397 named destinations out of 1000 (max. 500000)
- 907 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1258 PDF objects out of 1440 (max. 8388607)
+ 401 named destinations out of 1000 (max. 500000)
+ 898 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -42,7 +42,19 @@ def transform_size(excel_file, panjang_deteksi, lebar_deteksi, folder):
     return files
     
 
+def save_matrix_csv(matrix, filename, output_dir="CSV"):
+    os.makedirs(output_dir, exist_ok=True)
 
+    # jika shape = (1,H,W)
+    if matrix.ndim == 3:
+        matrix = matrix[0]
+
+    df = pd.DataFrame(matrix)
+    df.to_csv(
+        os.path.join(output_dir, filename),
+        index=False,
+        header=False
+    )
 
 
 

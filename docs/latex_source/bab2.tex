@@ -356,7 +356,7 @@ perubahan informasi yang seragam antara level skala.
 \begin{figure}
   \centering{}
   \includegraphics[width=0.8\textwidth]{gambar/Scale trace.jpg}
-  \caption{\emph{Scale trace of squared gradient and Laplacian} diterapkan pada model sudut dan tepi. Kolom pertama: tunjuk di dalam sudut. Kolom kedua: titik di luar sudut. Kolom ketiga: arahkan di dekat tepi. Di bingkai: Baris atas: Model sudut dan tepi. Baris tengah: Jejak skala untuk \(\gamma\) = 1. Baris bawah: Jejak skala untuk \(\gamma\) = 0,5.}
+  \caption{\emph{Scale trace of squared gradient and laplacian} diterapkan pada model sudut dan tepi. Kolom pertama: tunjuk di dalam sudut. Kolom kedua: titik di luar sudut. Kolom ketiga: arahkan di dekat tepi. Di bingkai: Baris atas: Model sudut dan tepi. Baris tengah: Jejak skala untuk \(\gamma\) = 1. Baris bawah: Jejak skala untuk \(\gamma\) = 0,5.}
 \end{figure}
 
 Baris atas dari frame pada gambar 2.2 menunjukkan konfigurasi sinyal teoritis, dimana Laplacian dan gradien dihitung. 
@@ -507,6 +507,7 @@ Matriks \(\mu(x,\sigma_{n})\) sebenarnya dihitung dengan skala integrasi \(\sigm
 \textbf{Extended Harris-Laplace.} Untuk beberapa titik, maksimum jejak skala tidak sesuai dengan skala deteksi yang diatur secara arbitrer. Poin-poin ini ditolak karena kurangnya maksimum, atau lokasi dan skalanya tidak akurat. Algoritma Harris-Laplace dapat diperluas untuk mencari lokasi \(x\) dan skala \(\sigma_{I}\) dari suatu interest point dengan akurasi tinggi. Detektor dapat diinisialisasi dengan titik Harris multi-skala. Selanjutnya, untuk setiap titik dapat menerapkan algoritma iteratif yang secara bersamaan mendeteksi lokasi dan skala titik-titik tersebut. Sebuah metode iteratif langsung untuk deteksi fitur dapat dinyatakan sebagai berikut. Untuk titik awal tertentu \(x\) dengan skala \(\sigma_{I}\):
 
 \begin{enumerate}
+  \setlength{\parskip}{0pt}
 	\item temukan skala ekstrim lokal untuk titik \(x^{(k)}\), jika tidak tolak titik tersebut. Kisaran skala dapat dibatasi oleh \(\sigma^{(k|1)}_{I} = s\sigma_{I}^{(k)}\) dengan \(s \in [0.7 , \cdot , 1.4]\).
 	\item mendeteksi spasial lokasi \(x^{k|1}\) dari maksimum ukuran Harris yang terdekat \(x^{k}\) untuk dipilih \(\sigma^{k|1}_{I}\).
 	\item lanjut ke langkah 1 jika \(\sigma^{k|1}_{I} \neq \sigma^{(k)}_{I}\) atau \(x^{(k|1)} \neq x^{(k)}\).
@@ -554,6 +555,7 @@ Banyak hasil yang sukses dalam memperkirakan deformasi afin dengan matriks momen
 di mana \(\Sigma_{I}\) dan \(\Sigma_{D}\) adalah matriks kovarians yang menentukan integrasi dan diferensiasi kernel Gaussian. Untuk mengurangi ruang pencarian, diberlakukan kondisi \(\Sigma_{I}=s\Sigma_{D}\), dimana \(s\) adalah skalar. Selanjutnya, untuk membatasi ruang pencarian inisialisasi detektor affine dengan interest point diekstrak oleh detektor Harris multi-skala. Detektor apa pun dapat digunakan untuk menentukan lokalisasi spasial dari titik awal, tetapi detektor Harris juga didasarkan pada \emph{Second moment matrix}, agar cocok secara alami dalam kerangka kerja ini. Untuk mendapatkan matriks bentuk untuk setiap titik kepentingan menghitung deskriptor momen kedua dengan skala integrasi dan diferensiasi yang dipilih secara otomatis. Garis besar metode deteksi kami disajikan dalam berikut
 
 \begin{enumerate}
+  \setlength{\parskip}{0pt}
   \item lokalisasi spasial dari suatu titik perhatian pada skala dan bentuk tertentu ditentukan oleh maksimum lokal dari fungsi Harris,
   \item skala integrasi dipilih pada skala ekstrim dari turunan yang dinormalisasi,
   \item skala diferensiasi dipilih pada maksimum isotropi yang dinormalisasi,
@@ -624,6 +626,7 @@ Properti konvergensi dari algoritma adaptasi bentuk dipelajari secara ekstensif.
 Untuk titik minat awal tertentu \(x^{(0)}\) kami menerapkan prosedur berikut:
 
 \begin{enumerate}
+  \setlength{\parskip}{0pt}
   \item menginisialisasi \(U^(0)\) ke matriks identitas,
   \item menormalkan jendela \(W(x_{w})=I(x)\) berpusat di \(U^{(k-1)}x_{w}^{(k-1)} = x^{(k-1)}\),
   \item pilih skala integrasi \(\sigma_{I}\) dalam \(x^{(k-1)}_{w}\),
