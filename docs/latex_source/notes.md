@@ -1,20 +1,18 @@
 # Notes TODO
 
-- (DONE) Perbarui contoh jaccard (bukan pake kombinasi, tapi n-gram digit 2)
-- (DONE) Similarity dipake jika jaccard ga bernilai 1
-- (DONE) Tambahin keterangan daftar pustaka
-  - Buat jaccard index
-  - Library python
-    - Soal typing (PEP 482-484)
-  - Apaan lagi yak ?
-- Tahapan perancangan dirinciin
-- Untuk efisiensi similarity, diperlukan threshold seberapa banyak yang dicari
+- Crop gambar yang yang mau dipakai menjadi size lebih kecil untuk Bab 4
+- Buat Ilustrasi untuk nilai d di bab 3 dan Jelaskan nilai d
+- Ubah rumus Akurasi menjadi (1 - MAPE) * 100%
+- Ganti gambar hasil penghitungan gradien dan auto korelasi menjadi warna putih
+- Jelaskan Penamaan gambar 4.1
+- Ubah Abstrak (Masalah, metode yang dipakai, dan Hasil yang didapat)
+- Tambah Penjelasan di sub bab 2.2
+
 
 ## Later
 
-- Fokus crawling untuk toko online (inventaris barangnya)
-- Ada opsi untuk penggabungan similarity didalam modul GST
+- 
 
 ## Questions
 
-- Minta klarifikasi untuk query yang pake OR tuh gimana
+- 

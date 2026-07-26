@@ -15,8 +15,9 @@
     \caption{Gambar yang akan digunakan dalam penelitian}\label{fig:folder-ikan}
 \end{figure}
 
-Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pre-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Mas, Lele, dan Nila Merah.
-\emph{pre-processing} dilakukan untuk memudahkan proses ektraksi sudut pada citra. \emph{pre-processing} terbagi menjadi beberapa tahapan, yaitu penghilangan background, rotasi citra berdasarkan sudut PCA, dan smoothing citra dengan Gaussian blur.
+Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pre-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Mas, Lele, dan Nila Merah, dapat dilihat pada gambar~\ref{fig:folder-ikan}.
+
+\emph{pre-processing} dilakukan untuk memudahkan proses ektraksi sudut pada citra.~\emph{pre-processing} terbagi menjadi beberapa tahapan, yaitu penghilangan background, rotasi citra berdasarkan sudut PCA, dan smoothing citra dengan Gaussian blur.
 Berikut \emph{Source Code} yang digunakan dalam proses penghapusan background:
 
 \begin{figure}[H]
@@ -26,13 +27,15 @@ Berikut \emph{Source Code} yang digunakan dalam proses penghapusan background:
     \caption{\emph{source code}: Untuk menghapus background dari library rembg}
 \end{figure}
 
-Fungsi \emph{remove} digunakan untuk menghapus background dari gambar dengan menggunakan library \emph{rembg}. Parameter \emph{bgcolor} digunakan untuk menentukan warna background yang akan dihapus, dalam hal ini adalah warna putih dengan nilai RGB (255, 255, 255). Setelah fungsi ini dijalankan, gambar akan memiliki background transparan sehingga memudahkan proses ekstraksi sudut pada citra.
-
+Fungsi \emph{remove} digunakan untuk menghapus background dari gambar dengan menggunakan library \emph{rembg}. Contoh gambar dapat dilihat pada gambar~\ref{fig:dataset}.
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[keepaspectratio, width=14cm]{gambar/ikan_Nila_Induk_1.jpg}}
 	\caption{Contoh gambar dan jenis ikan yang digunakan}\label{fig:dataset}
 \end{figure}
+
+Parameter \emph{bgcolor} digunakan untuk menentukan warna background yang akan dihapus, dalam hal ini adalah warna putih dengan nilai RGB (255, 255, 255). Setelah fungsi ini dijalankan, gambar akan memiliki background transparan sehingga memudahkan proses ekstraksi sudut pada citra. Hasil dari proses remove dapat dilihat pada gambar~\ref{fig:rembg}.
+
 
 \begin{figure}[H]
 	\centering
@@ -519,7 +522,7 @@ Dengan Menggunakan rumus MAPE, didapatkan hasil evaluasi rata-rata akurasi pada 
         3. & ikan\_nila & 100 & 85.26 & 83.96 \\
         \hline
     \end{tabular}
-\caption*{Rata-rata MAPE ikan}
+\caption{Rata-rata MAPE ikan}
 \end{table}
 
 % \begin{longtable}{|c|c|c|c|c|}
