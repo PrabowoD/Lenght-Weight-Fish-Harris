@@ -71,8 +71,8 @@
 \contentsline {section}{\numberline {5.2}Saran}{51}{section.5.2}%
 \contentsline {chapter}{DAFTAR PUSTAKA}{52}{Item.25}%
 \contentsline {chapter}{LAMPIRAN}{54}{chapter*.41}%
-\contentsline {chapter}{\numberline {A}\textit {Source Code}}{54}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Tabel Gambar Ikan}{55}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Tabel Hasil Pengukuran Panjang dan Berat Ikan}{56}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Tabel Hasil Estimasi Panjang dan Berat Ikan}{58}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Tabel Hasil MAPE}{60}{appendix.E}%
+\contentsline {chapter}{\numberline {A}\textit {Source Code}}{54}{chapter.A}%
+\contentsline {chapter}{\numberline {B}Tabel Gambar Ikan}{55}{chapter.B}%
+\contentsline {chapter}{\numberline {C}Tabel Hasil Pengukuran Panjang dan Berat Ikan}{56}{chapter.C}%
+\contentsline {chapter}{\numberline {D}Tabel Hasil Estimasi Panjang dan Berat Ikan}{58}{chapter.D}%
+\contentsline {chapter}{\numberline {E}Tabel Hasil MAPE}{60}{chapter.E}%
