@@ -277,7 +277,14 @@ Setelah nilai skala diperoleh, panjang ikan dalam satuan nyata dapat dihitung de
 \begin{equation}
     Panjang\ Nyata = d \times Skala
 \end{equation}
-    Dimana \(d\) adalah jarak antar 2 titik sejajar pada bounding box, titik sejajar pada bounding box dibentuk dengan cara mengambil nilai maksimum dan minimum dari hasil deteksi.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, width=6cm]{gambar/ikan_nila_1 - Box_croped_D.jpg}
+    \caption{Nilai d pada gambar}\label{fig:nilai d}
+\end{figure}
+
+    Dimana \(d\) adalah jarak antar 2 titik sejajar pada bounding box seperti pada gambar~\ref{fig:nilai d}, titik sejajar pada bounding box dibentuk dengan cara mengambil nilai maksimum dan minimum dari hasil deteksi.
 
 \subsection{Melakukan Proyeksi Perspektif}
     Proyeksi perspektif digunakan untuk mengoreksi distorsi yang terjadi pada gambar akibat sudut pengambilan gambar yang tidak sejajar dengan objek. Proyeksi perspektif bertujuan untuk mengubah citra sehingga tampak seolah-olah diambil dari sudut pandang yang lebih langsung, sehingga panjang dan lebar ikan dapat dihitung dengan lebih akurat. Berikut adalah rumus-nya:
@@ -329,8 +336,14 @@ Rumus ini merupakan turunan sederhana dari konsep biologis \emph{length-weight R
     Akurasi dihitung menggunakan rumus:
 \begin{equation}
     % Akurasi = \frac{1}{n} \sum_{i=1}^{n} \frac{1}{1 + |E_i|} \cdot 100\%
-    Akurasi = (1 - (\frac{Predict - GroudTruth}{GroundTruth})) \cdot 100\%
+    Akurasi = (1 - (|\frac{Predict - GroudTruth}{GroundTruth}|)) \cdot 100\%
 \end{equation}
+
+    Sedangkan untuk mencari rata-rata Akurasi dari setiap jenis ikan, digunakan rumus:
+\begin{equation}
+    Rata-rata\ Akurasi = 100\% - (MAPE)
+\end{equation}
+
     Rumus berasal dari MAE (\emph{Mean Absolute Error}) yang digunakan untuk mengukur seberapa dekat hasil prediksi dengan nilai sebenarnya.
-Setelah itu nilai dinormalisasikan dengan menjadikan bentuk persentase menggunakan MAPE (\emph{Mean Absolute Percentage Error}), dengan mengurangi nilai MAE 100\% untuk mendapatkan nilai akurasi. 
+Setelah itu nilai dinormalisasikan dengan menjadikan bentuk persentase untuk mendapatkan MAPE (\emph{Mean Absolute Percentage Error}), dengan mengurangi nilai MAPE dan 100\% untuk mendapatkan rata-rata akurasi. 
  

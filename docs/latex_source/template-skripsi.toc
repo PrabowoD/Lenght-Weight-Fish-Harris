@@ -1,12 +1,12 @@
 \babel@toc {english}{}\relax 
 \babel@toc {bahasa}{}\relax 
-\contentsline {chapter}{Lembar Pengesahan}{iii}{Doc-Start}%
-\contentsline {chapter}{KATA PENGANTAR}{iv}{Item.4}%
-\contentsline {chapter}{ABSTRAK}{v}{chapter*.2}%
-\contentsline {chapter}{\emph {ABSTRACT}}{vi}{chapter*.3}%
-\contentsline {chapter}{DAFTAR ISI}{vii}{chapter*.4}%
-\contentsline {chapter}{DAFTAR GAMBAR}{ix}{chapter*.5}%
-\contentsline {chapter}{DAFTAR TABEL}{ix}{chapter*.6}%
+\contentsline {chapter}{Lembar Pengesahan}{iv}{chapter*.1}%
+\contentsline {chapter}{KATA PENGANTAR}{v}{Item.4}%
+\contentsline {chapter}{ABSTRAK}{vi}{chapter*.3}%
+\contentsline {chapter}{\emph {ABSTRACT}}{vii}{chapter*.4}%
+\contentsline {chapter}{DAFTAR ISI}{viii}{chapter*.5}%
+\contentsline {chapter}{DAFTAR GAMBAR}{x}{chapter*.6}%
+\contentsline {chapter}{DAFTAR TABEL}{xi}{chapter*.7}%
 \babel@toc {bahasa}{}\relax 
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang Masalah}{1}{section.1.1}%
@@ -48,31 +48,31 @@
 \contentsline {section}{\numberline {3.8}Penghitungan panjang dan Estimasi berat}{31}{section.3.8}%
 \contentsline {subsection}{\numberline {3.8.1}Bounding-Box}{32}{subsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.8.2}Menghitung Panjang}{33}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Melakukan Proyeksi Perspektif}{33}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.3}Melakukan Proyeksi Perspektif}{34}{subsection.3.8.3}%
 \contentsline {subsection}{\numberline {3.8.4}Mengestimasi Berat}{34}{subsection.3.8.4}%
-\contentsline {section}{\numberline {3.9}Evaluasi Akurasi}{34}{section.3.9}%
+\contentsline {section}{\numberline {3.9}Evaluasi Akurasi}{35}{section.3.9}%
 \contentsline {chapter}{\numberline {IV}HASIL DAN PEMBAHASAN}{36}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Pre-Processing Citra}{36}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Input Gambar dan Penghilangan Background}{36}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Rotasi}{38}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Smoothing Gaussian}{39}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Menghitung Gradien}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Menghitung Gradien}{40}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Auto Korelasi}{41}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Harris Respon}{42}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Harris Respon}{43}{section.4.4}%
 \contentsline {section}{\numberline {4.5}NMS dan Thresholding}{44}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Menghitung Panjang dan Berat}{45}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Bounding-Box}{45}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Menghitung Panjang}{47}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Memproyeksi Perspektif}{47}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Menghitung Berat}{48}{subsection.4.6.4}%
-\contentsline {section}{\numberline {4.7}Evaluasi Akurasi}{49}{section.4.7}%
-\contentsline {chapter}{\numberline {V}KESIMPULAN DAN SARAN}{51}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{51}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{51}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{52}{Item.25}%
-\contentsline {chapter}{LAMPIRAN}{54}{chapter*.41}%
-\contentsline {chapter}{\numberline {A}\textit {Source Code}}{54}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Tabel Gambar Ikan}{55}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Tabel Hasil Pengukuran Panjang dan Berat Ikan}{56}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Tabel Hasil Estimasi Panjang dan Berat Ikan}{58}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Tabel Hasil MAPE}{60}{appendix.E}%
+\contentsline {section}{\numberline {4.6}Menghitung Panjang dan Berat}{46}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Bounding-Box}{46}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Menghitung Panjang}{48}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Memproyeksi Perspektif}{48}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Menghitung Berat}{49}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.7}Evaluasi Akurasi}{50}{section.4.7}%
+\contentsline {chapter}{\numberline {V}KESIMPULAN DAN SARAN}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{52}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{53}{Item.24}%
+\contentsline {chapter}{LAMPIRAN}{55}{chapter*.44}%
+\contentsline {chapter}{\numberline {A}\textit {Source Code}}{55}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Tabel Gambar Ikan}{56}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Tabel Hasil Pengukuran Panjang dan Berat Ikan}{57}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Tabel Hasil Estimasi Panjang dan Berat Ikan}{59}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Tabel Hasil Akurasi}{61}{appendix.E}%

@@ -239,6 +239,9 @@ INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.t
 INPUT .\template-skripsi.aux
 INPUT .\template-skripsi.aux
 INPUT template-skripsi.aux
+INPUT .\persetujuan.aux
+INPUT .\persetujuan.aux
+INPUT persetujuan.aux
 INPUT .\kata-pengantar.aux
 INPUT .\kata-pengantar.aux
 INPUT kata-pengantar.aux
@@ -307,33 +310,19 @@ INPUT .\gambar\logounj.png
 INPUT .\gambar\logounj.png
 INPUT .\gambar\logounj.png
 INPUT .\gambar\logounj.png
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\persetujuan.tex
+INPUT .\persetujuan.tex
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\USER\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\skripsi\lembar pengesahan.pdf
-INPUT .\kata-pengantar.tex
-INPUT .\kata-pengantar.tex
-OUTPUT kata-pengantar.aux
-INPUT .\kata-pengantar.tex
-INPUT .\kata-pengantar.tex
-INPUT kata-pengantar.tex
+OUTPUT persetujuan.aux
+INPUT .\persetujuan.tex
+INPUT .\persetujuan.tex
+INPUT persetujuan.tex
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -354,8 +343,31 @@ INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\l
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\skripsi\lembar pengesahan.pdf
+INPUT .\kata-pengantar.tex
+INPUT .\kata-pengantar.tex
+OUTPUT kata-pengantar.aux
+INPUT .\kata-pengantar.tex
+INPUT .\kata-pengantar.tex
+INPUT kata-pengantar.tex
+INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\abstrak.tex
@@ -364,9 +376,6 @@ OUTPUT abstrak.aux
 INPUT .\abstrak.tex
 INPUT .\abstrak.tex
 INPUT abstrak.tex
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\abstract.tex
 INPUT .\abstract.tex
 OUTPUT abstract.aux
@@ -511,6 +520,13 @@ INPUT .\gambar\Alur Penghitungan panjang dan Estimasi Berat.png
 INPUT .\gambar\Alur Penghitungan panjang dan Estimasi Berat.png
 INPUT .\gambar\Alur Penghitungan panjang dan Estimasi Berat.png
 INPUT .\gambar\Alur Penghitungan panjang dan Estimasi Berat.png
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped_D.jpg
 INPUT .\bab4.tex
 INPUT .\bab4.tex
 OUTPUT bab4.aux
@@ -527,52 +543,59 @@ INPUT .\gambar\Screenshot_3.jpg
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
-INPUT .\gambar\ikan_Nila_Induk_1.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_croped.jpg
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\IMG_20240121_135842 - Copy.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_output.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
-INPUT .\gambar\ikan_Nila_Induk_1_rotate2.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\IMG_20240121_135842 - Copy_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_output_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_rotate2_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
+INPUT .\gambar\ikan_Nila_Induk_1_gaus_croped.jpg
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
-INPUT .\gambar\csv Gradient X.png
-INPUT .\gambar\csv Gradient X.png
-INPUT .\gambar\csv Gradient X.png
-INPUT .\gambar\csv Gradient X.png
-INPUT .\gambar\csv Gradient X.png
-INPUT .\gambar\csv Gradient X.png
-INPUT .\gambar\csv Gradient X.png
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
-INPUT .\gambar\csv Autokorelasi IXX.png
-INPUT .\gambar\csv Autokorelasi IXX.png
-INPUT .\gambar\csv Autokorelasi IXX.png
-INPUT .\gambar\csv Autokorelasi IXX.png
-INPUT .\gambar\csv Autokorelasi IXX.png
-INPUT .\gambar\csv Autokorelasi IXX.png
-INPUT .\gambar\csv Autokorelasi IXX.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Gradient X_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
+INPUT .\gambar\csv Autokorelasi IXX_white.png
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
 INPUT .\gambar\ikan_nila_induk_1_Harris.jpg
@@ -587,27 +610,13 @@ INPUT .\gambar\ikan_nila_induk_1_NMS.jpg
 INPUT .\gambar\ikan_nila_induk_1_NMS.jpg
 INPUT .\gambar\ikan_nila_induk_1_NMS.jpg
 INPUT .\gambar\ikan_nila_induk_1_NMS.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_mas_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_lele_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
-INPUT .\gambar\ikan_nila_1 - Box.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
+INPUT .\gambar\ikan_nila_1 - Box_croped.jpg
 INPUT .\bab5.tex
 INPUT .\bab5.tex
 OUTPUT bab5.aux
@@ -857,6 +866,9 @@ INPUT .\gambar\Ikan Nila\ikan_Nila_Kbawah_13.jpg
 INPUT .\gambar\Ikan Nila\ikan_Nila_Kbawah_13.jpg
 INPUT .\gambar\Ikan Nila\ikan_Nila_Kbawah_13.jpg
 INPUT template-skripsi.aux
+INPUT .\persetujuan.aux
+INPUT .\persetujuan.aux
+INPUT persetujuan.aux
 INPUT .\kata-pengantar.aux
 INPUT .\kata-pengantar.aux
 INPUT kata-pengantar.aux

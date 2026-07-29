@@ -15,7 +15,8 @@
     \caption{Gambar yang akan digunakan dalam penelitian}\label{fig:folder-ikan}
 \end{figure}
 
-Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pre-processing}. Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis ikan, yaitu Mas, Lele, dan Nila Merah, dapat dilihat pada gambar~\ref{fig:folder-ikan}.
+Langkah pertama yang dilakukan dalam penelitian adalah dengan memasukan \emph{dataset} untuk dilakukan \emph{pre-processing}. 
+Dalam hal ini, gambar akan diberikan nama sesuai dengan jenis dan kelas ikan, penulis memberikan nama pada setiap gambar dengan format \emph{jenis-ikan\_kelas-ikan\_gambar ke} dan untuk jenis filenya \emph{jpg}, selengkapnya dapat dilihat pada gambar~\ref{fig:folder-ikan}.
 
 \emph{pre-processing} dilakukan untuk memudahkan proses ektraksi sudut pada citra.~\emph{pre-processing} terbagi menjadi beberapa tahapan, yaitu penghilangan background, rotasi citra berdasarkan sudut PCA, dan smoothing citra dengan Gaussian blur.
 Berikut \emph{Source Code} yang digunakan dalam proses penghapusan background:
@@ -30,7 +31,7 @@ Berikut \emph{Source Code} yang digunakan dalam proses penghapusan background:
 Fungsi \emph{remove} digunakan untuk menghapus background dari gambar dengan menggunakan library \emph{rembg}. Contoh gambar dapat dilihat pada gambar~\ref{fig:dataset}.
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[keepaspectratio, width=14cm]{gambar/ikan_Nila_Induk_1.jpg}}
+	\fbox{\includegraphics[keepaspectratio, width=14cm]{gambar/ikan_Nila_Induk_1_croped.jpg}}
 	\caption{Contoh gambar dan jenis ikan yang digunakan}\label{fig:dataset}
 \end{figure}
 
@@ -39,7 +40,7 @@ Parameter \emph{bgcolor} digunakan untuk menentukan warna background yang akan d
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[keepaspectratio, width=14cm]{gambar/IMG_20240121_135842 - Copy.jpg}}
+	\fbox{\includegraphics[keepaspectratio, width=14cm]{gambar/IMG_20240121_135842 - Copy_croped.jpg}}
 	\caption{Contoh hasil gambar yang telah dihilangkan backgroundnya}\label{fig:rembg}
 \end{figure}
 \subsection{Rotasi}
@@ -76,13 +77,13 @@ Setelah rotasi dilakukan dengan fungsi \emph{PCa\_Rotate\_image}, gambar akan me
 
     \begin{figure}[H]
         \centering
-        \fbox{\includegraphics[keepaspectratio, width=8cm]{gambar/ikan_Nila_Induk_1_output.jpg}}
+        \fbox{\includegraphics[keepaspectratio, width=8cm]{gambar/ikan_Nila_Induk_1_output_croped.jpg}}
         \caption{Sebelum rotasi}\label{fig:before-rotasi}
     \end{figure}
 
     \begin{figure}[H]
         \centering
-        \fbox{\includegraphics[keepaspectratio, width=8cm]{gambar/ikan_Nila_Induk_1_rotate2.jpg}}
+        \fbox{\includegraphics[keepaspectratio, width=8cm]{gambar/ikan_Nila_Induk_1_rotate2_croped.jpg}}
         \caption{Setelah rotasi}\label{fig:after-rotasi}
     \end{figure}
 
@@ -104,13 +105,20 @@ Setelah rotasi dilakukan dengan fungsi \emph{PCa\_Rotate\_image}, gambar akan me
     \end{lstlisting}
 \end{figure}
 
-\emph{GaussianSmooth()} bertujuan untuk menghaluskan citra dengan menggunakan filter Gaussian. Fungsi ini pertama-tama memeriksa apakah citra memiliki tiga saluran warna (RGB) atau hanya satu saluran (grayscale). Jika citra memiliki tiga saluran, maka akan dikonversi menjadi grayscale menggunakan fungsi \emph{cv2.cvtColor}. Setelah itu, fungsi \emph{cv2.GaussianBlur} digunakan untuk menerapkan filter Gaussian pada citra dengan kernel berukuran 3x3 dan nilai sigmaX sebesar 1. 
-Hasil dari proses ini kemudian dinormalisasi ke rentang [0, 255] menggunakan fungsi \emph{cv2.normalize} memastikan bahwa nilai piksel berada pada rentang yang valid untuk citra grayscale. 
+\emph{GaussianSmooth} bertujuan untuk menghaluskan citra dengan menggunakan filter Gaussian. Fungsi ini pertama-tama memeriksa apakah citra memiliki tiga saluran warna (RGB) atau hanya satu saluran (grayscale). Jika citra memiliki tiga saluran, maka akan dikonversi menjadi grayscale menggunakan fungsi \emph{cv2.cvtColor}. Setelah itu, fungsi \emph{cv2.GaussianBlur} digunakan untuk menerapkan filter Gaussian pada citra dengan kernel berukuran 3$\times$3 dan nilai sigmaX sebesar 1. 
+Hasil dari proses ini kemudian dinormalisasi ke rentang [0, 255] menggunakan fungsi \emph{cv2.normalize} memastikan bahwa nilai piksel berada pada rentang yang valid untuk citra grayscale hasil nya dapat dilihat pada gambar~\ref{fig:gaussian}.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[keepaspectratio, width=8cm]{gambar/ikan_Nila_Induk_1_gaus_croped.jpg}}
+    \caption{Contoh hasil gambar yang telah dilakukan smoothing Gaussian}\label{fig:gaussian}
+\end{figure}
+
 Setelah semua tahapan pre-processing telah selesai dilakukan, gambar akan disave kedalam folder terpisah dan akan digunakan untuk proses selanjutnya.
 
 % \section{Penghitungan Harris Respon}
 \section{Menghitung Gradien}
-    Sebelum menjalankan fungsi \emph{Harris Respons}, beberapa fungsi perlu dijalankan terlebih dahulu, yaitu menghitung Gradien pada sumbu X dan Y\@. Berikut \emph{Source Code} yang digunakan untuk menghitung Gradien pada sumbu X dan Y:
+    Sebelum menjalankan fungsi \emph{Harris Respons}, beberapa fungsi perlu dijalankan terlebih dahulu, yaitu menghitung Gradien pada sumbu X dan Y\@. Berikut \emph{Source Code} yang digunakan untuk menghitung Gradien pada sumbu X dan Y\@:
 
 \begin{figure}[H]
     \begin{lstlisting}[language=Python, basicstyle=\tiny]
@@ -136,11 +144,11 @@ Hasil dari proses gradien menunjukkan bahwa bagian tepi tubuh ikan memiliki peru
 Nilai gradien terbesar umumnya muncul pada bagian kepala, ekor, dan sirip ikan karena area tersebut memiliki perubahan bentuk dan kontras yang lebih signifikan terhadap latar belakang citra.
 
 Selain itu, penggunaan Gaussian Smoothing pada tahap sebelumnya membantu mengurangi noise sehingga hasil gradien menjadi lebih stabil. 
-Tanpa proses smoothing, noise kecil pada citra dapat menghasilkan perubahan intensitas palsu yang berpotensi menyebabkan munculnya titik sudut yang tidak sesuai pada proses Harris-Corner Detection, hasil dapat dilihat pada Gambar~\ref{fig:csvgradien_x}.
+Tanpa proses smoothing, noise kecil pada citra dapat menghasilkan perubahan intensitas palsu yang berpotensi menyebabkan munculnya titik sudut yang tidak sesuai pada proses Harris-Corner Detection, hasil dapat dilihat pada Gambar~\ref{fig:csvgradien_x} untuk semua hasil csv dapat dilihat pada link github yang berada di lampiran.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{gambar/csv Gradient X.png}
+    \includegraphics[width=0.8\textwidth]{gambar/csv Gradient X_white.png}
     \caption{Hasil gradien pada sumbu x}\label{fig:csvgradien_x}
 \end{figure}
 
@@ -166,11 +174,11 @@ Pada tahap ini dihasilkan tiga komponen utama, yaitu:
 
 Nilai-nilai tersebut kemudian digunakan untuk membentuk matriks autokorelasi $M$ pada setiap piksel citra. Matriks ini digunakan sebagai dasar dalam menghitung nilai respon Harris pada tahap berikutnya.
 Area yang memiliki perubahan intensitas tinggi pada dua arah sekaligus akan menghasilkan nilai autokorelasi yang besar. Kondisi ini umumnya terjadi pada bagian sudut objek ikan, seperti ujung kepala dan ekor. 
-Sebaliknya, area tubuh ikan yang relatif datar akan menghasilkan perubahan intensitas yang lebih kecil sehingga nilai autokorelasi juga menjadi lebih rendah, salah satu hasil autokorelasi dapat dilihat pada Gambar~\ref{fig:csvautokorelasi}.
+Sebaliknya, area tubuh ikan yang relatif datar akan menghasilkan perubahan intensitas yang lebih kecil sehingga nilai autokorelasi juga menjadi lebih rendah, salah satu hasil autokorelasi dapat dilihat pada Gambar~\ref{fig:csvautokorelasi} untuk semua hasil csv dapat dilihat pada link github yang berada di lampiran.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{gambar/csv Autokorelasi IXX.png}
+    \includegraphics[width=0.8\textwidth]{gambar/csv Autokorelasi IXX_white.png}
     \caption{Hasil autokorelasi ixx}\label{fig:csvautokorelasi}
 \end{figure}
 
@@ -295,21 +303,7 @@ Namun, terdapat beberapa kondisi yang dapat mempengaruhi akurasi bounding box, s
 
 \begin{figure}[H]
         \centering
-    \begin{subfigure}{.3\textwidth}
-        \centering
-        \includegraphics[keepaspectratio, width=4.2cm]{gambar/ikan_mas_1 - Box.jpg}
-        \caption{Mas}
-    \end{subfigure}
-    \begin{subfigure}{.3\textwidth}
-        \centering
-        \includegraphics[keepaspectratio, width=4.2cm]{gambar/ikan_lele_1 - Box.jpg}
-        \caption{Lele}
-    \end{subfigure} 
-    \begin{subfigure}{.3\textwidth}
-        \centering
-        \includegraphics[keepaspectratio, width=4.2cm]{gambar/ikan_nila_1 - Box.jpg}
-        \caption{Nila Merah}
-    \end{subfigure}
+        \includegraphics[keepaspectratio, width=8cm]{gambar/ikan_nila_1 - Box_croped.jpg}
     \caption{Contoh hasil gambar yang telah diberi bounding box}\label{fig:box}
 \end{figure}
 
@@ -522,7 +516,7 @@ Dengan Menggunakan rumus MAPE, didapatkan hasil evaluasi rata-rata akurasi pada 
         3. & ikan\_nila & 100 & 85.26 & 83.96 \\
         \hline
     \end{tabular}
-\caption{Rata-rata MAPE ikan}
+\caption{Rata-rata Akurasi setiap jenis ikan}
 \end{table}
 
 % \begin{longtable}{|c|c|c|c|c|}
